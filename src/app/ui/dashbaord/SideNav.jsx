@@ -9,7 +9,7 @@ import {FaCartShopping} from 'react-icons/fa6'
 const SideNav = () => {
     
   return (
-    <div className='min-h-screen w-11 sm:w-52 transition-all 200 ease-in bg-slate-100 rounded-lg  pt-3 px-1'>
+    <div className='min-h-screen w-11 sm:w-72 transition-all 200 ease-in bg-slate-100 rounded-lg  pt-3 px-1'>
 
         <div className='w-full'>
             <div className='w-full flex place-items-center'>

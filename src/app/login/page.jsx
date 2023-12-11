@@ -5,18 +5,18 @@ import {FaGithub, FaGoogle} from "react-icons/fa"
 const LoginPage = () => {
   return (
     <div className='flex-1 w-full flex justify-center place-items-center bg-slate-200'>
-        <form className='w-80 h-auto rounded-md bg-white px-4 flex flex-col gap-10'>
+        <form className='w-80 sm:w-96 h-auto rounded-md bg-white px-4 flex flex-col gap-10'>
             <h1 className='font-bold text-2xl text-center pt-4 text-slate-900'>Login</h1>
-             <div className='flex flex-col gap-3'>
-               <div>
-                <input type="text" placeholder="Enter Email/Phone No" className="input input-bordered w-full max-w-xs" />
+             <div className=' w-full flex flex-col gap-3 place-items-center '>
+               <div className='w-full flex justify-center'>
+                <input type="text" placeholder="Enter Email/Phone No" className="input input-bordered w-full " />
                </div>
 
-               <div>
-                <input type="password" placeholder="Password" className="input input-bordered w-full max-w-xs" />
+               <div className='w-full flex '>
+                <input type="password" placeholder="Password" className="input input-bordered w-full " />
                </div>
 
-               <div>
+               <div className='w-full'>
                 <button className='hover:text-blue-500 transition-all 100 ease-in text-sm'>forgot password?</button>
                </div>
              </div>
