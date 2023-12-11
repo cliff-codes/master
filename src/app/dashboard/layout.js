@@ -1,9 +1,11 @@
+import SideNav from "../ui/dashbaord/SideNav";
 
 
 export default function DashboardLayout({ children }) {
     return (
-      <html lang="en">
-        <body>{children}</body>
-      </html>
+        <div className="w-full flex">
+            <SideNav/>
+            {children}
+        </div>
     )
   }
