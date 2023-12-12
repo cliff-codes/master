@@ -44,10 +44,10 @@ function BarChart() {
     return (
         <>
             {/* Bar chart */}
-            <h1 className="w-full mb-2 mt-10 text-xl font-semibold capitalize  ">total purchase order</h1>
-            <div className="w-full h-auto max-w-2xl flex  my-auto">
-                <div className='border border-gray-400 pt-0 rounded-xl   w-full h-fit my-auto  shadow-xl max-w-2xl'>
-                    <canvas id='myChart'></canvas>
+            <h1 className="w-full mb-2 mt-10 text-base  sm:font-semibold capitalize  ">total purchase order</h1>
+            <div className="w-full max-w-full container h-fit flex ">
+                <div className='border border-gray-400 pt-0 rounded-xl h-96  shadow-xl w-full max-w-2xl'>
+                    <canvas id='myChart' className="max-w-full text-xs min-h-full"></canvas>
                 </div>
             </div>
         </>

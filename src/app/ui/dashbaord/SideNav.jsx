@@ -29,7 +29,7 @@ const SideNav = () => {
 
             <SideNavLink name={'Analytics'} route={'/dashboard/analytics'} icon={<MdAnalytics size={24}/>}/>
 
-            <SideNavLink name={'User-Managment'} route={'/dashboard/user-management'} icon={<MdManageAccounts size={27}/>}/>
+            <SideNavLink name={'User-Managment'} route={'/dashboard/user-management'} icon={<MdManageAccounts size={24}/>}/>
         </div>
     </div>
   )

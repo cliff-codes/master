@@ -8,15 +8,15 @@ const NavBar = () => {
     const routeName = pathname.split('/').pop()
 
   return (
-    <div className='w-full h-16 bg-slate-100 rounded-lg flex place-items-center justify-between px-2'>
-        <h1 className='capitalize sm:text-lg text-2xl'>
+    <div className='w-full h-12 sm:h-14 bg-slate-100 rounded-lg flex place-items-center justify-between px-2'>
+        <h1 className='capitalize text-sm font-bold sm:text-lg '>
             {routeName}
         </h1>
 
         {/* notifications */}
         <div>
-            <button className='btn'>
-                <IoMdNotifications size={24}/>
+            <button className='h-9 hover:bg-slate-200 px-2 rounded-full transition-all 50 ease-linear'>
+                <IoMdNotifications size={20}/>
                 </button>
         </div>
     </div>

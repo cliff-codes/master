@@ -1,53 +1,69 @@
 'use client'
-import React, {useEffect} from 'react'
-import Chart from 'chart.js';
+import React from 'react'
+import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts'
+
 
 const ChartTest = () => {
-  useEffect(() => {
-    var ctx = document.getElementById('myChart').getContext('2d');
-    var myChart = new Chart(ctx, {
-      type: 'line',
-      data: {
-        labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-        datasets: [{
-          data: [86, 114, 106, 106, 107, 111, 133],
-          label: "Applied",
-          borderColor: "#3e95cd",
-          backgroundColor: "#7bb6dd",
-          fill: false,
-        }, {
-          data: [70, 90, 44, 60, 83, 90, 100],
-          label: "Accepted",
-          borderColor: "#3cba9f",
-          backgroundColor: "#71d1bd",
-          fill: false,
-        }, {
-          data: [10, 21, 60, 44, 17, 21, 17],
-          label: "Pending",
-          borderColor: "#ffa500",
-          backgroundColor: "#ffc04d",
-          fill: false,
-        }, {
-          data: [6, 3, 2, 2, 7, 0, 16],
-          label: "Rejected",
-          borderColor: "#c45850",
-          backgroundColor: "#d78f89",
-          fill: false,
-        }
-        ]
-      },
-    });
-  }, [])
-return (
-<>
-  <div className="w-full mx-auto mt-10 text-xl font-semibold capitalize pb-3">Total purchase order</div>
-  <div className="w-full h-auto max-h-96 max-w-xl  flex  ">
-    <div className='border border-gray-400 pt-0 rounded-xl w-full max-h-96   shadow-xl'>
-      <canvas id='myChart' className='w-full h-auto max-w-xl md:max-w-xl'></canvas>
-    </div>
-  </div>
-</>
-)
+
+  const data = [
+    {
+      "year": "2016",
+      "Iphone": 4000,
+      "Samsung": 2400
+    },
+    {
+      "year": "2017",
+      "Iphone": 3000,
+      "Samsung": 1398
+    },
+    {
+      "year": "2018",
+      "Iphone": 2000,
+      "Samsung": 9800
+    },
+    {
+      "year": "2019",
+      "Iphone": 2780,
+      "Samsung": 3908
+    },
+    {
+      "year": "2020",
+      "Iphone": 1890,
+      "Samsung": 4800
+    },
+    {
+      "year": "2021",
+      "Iphone": 2390,
+      "Samsung": 3800
+    },
+    {
+      "year": "2022",
+      "Iphone": 3490,
+      "Samsung": 4300
+    }
+  ]
+  return (
+    <ResponsiveContainer width={'100%'} height={'100%'}>
+      <AreaChart width={730} height={250} data={data} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
+        <defs>
+          <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="5%" stopColor="#8884d8" stopOpacity={0.8} />
+            <stop offset="95%" stopColor="#8884d8" stopOpacity={0} />
+          </linearGradient>
+          <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="5%" stopColor="#82ca9d" stopOpacity={0.8} />
+            <stop offset="95%" stopColor="#82ca9d" stopOpacity={0} />
+          </linearGradient>
+        </defs>
+        <XAxis dataKey={"year"}/>
+        <YAxis/>
+        <Tooltip />
+        
+        <Area type="monotone" dataKey="Iphone" stroke="#8884d8" fillOpacity={1} fill="url(#colorUv)" />
+        <Area type="monotone" dataKey="Samsung" stroke="#82ca9d" fillOpacity={1} fill="url(#colorPv)" />
+      </AreaChart>
+    </ResponsiveContainer>
+  )
 }
 
 export default ChartTest
