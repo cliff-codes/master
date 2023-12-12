@@ -32,9 +32,8 @@ const TableRow = ({isChecked, handleCheckBoxChange, index}) => {
               <td>
                 10/12/2023
               </td>
-              <td className='flex flex-col md:flex-row'>
-                <span><button className='btn btn-success text-green-200'>approve</button></span>
-                <span><button className='btn bg-red-500 text-red-200 hover:bg-red-600'>decline</button></span>
+              <td className='font-medium'>
+                1200.00
               </td>
               <td className='z-100 '>
                     {/* You can open the modal using document.getElementById('ID').showModal() method */}

@@ -46,7 +46,7 @@ const ApprovalsPage = () => {
 
             {
               checkboxes.some((isChecked) => isChecked) ? <div className=' h-12 rounded-lg'>
-              <div><button className='btn bg-red-400 text-white hover:bg-red-500'>Delete</button></div>
+              <div><button className='btn btn-error'>Delete</button></div>
             </div> : null
             }
           </div>
@@ -61,7 +61,7 @@ const ApprovalsPage = () => {
               </th>
               <th>Name</th>
               <th>Date</th>
-              <th>Action</th>
+              <th>Budget</th>
               <th></th>
             </tr>
           </thead>
