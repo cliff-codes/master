@@ -4,7 +4,7 @@ import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'rec
 
 
 const ChartTest = () => {
-
+  // {data for plotting graph}
   const data = [
     {
       "year": "2016",
@@ -58,7 +58,7 @@ const ChartTest = () => {
         <XAxis dataKey={"year"}/>
         <YAxis/>
         <Tooltip />
-        
+
         <Area type="monotone" dataKey="Iphone" stroke="#8884d8" fillOpacity={1} fill="url(#colorUv)" />
         <Area type="monotone" dataKey="Samsung" stroke="#82ca9d" fillOpacity={1} fill="url(#colorPv)" />
       </AreaChart>
