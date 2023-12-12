@@ -31,10 +31,10 @@ const ApprovalsPage = () => {
   };
 
   return (
-    <div className='flex-1 mt-3 mr-3'>
+    <div className='flex-1 mt-3 mr-3 w-full max-w-xs'>
         <NavBar/>
         
-        <div className="overflow-x-auto overflow-y-hidden pt-14">
+        <div className="pt-14">
           <div className='w-full flex justify-between mb-2 place-items-center'>
             <div className="dropdown dropdown-right">
               <div tabIndex={0} role="button" className="btn m-1">sort by <span><IoIosArrowDown/></span></div>
@@ -50,7 +50,7 @@ const ApprovalsPage = () => {
             </div> : null
             }
           </div>
-          <table className="table border  ">
+          <table className="table border max-w-sm will-change-transform">
           {/* head */}
           <thead>
             <tr className=''>
@@ -60,7 +60,7 @@ const ApprovalsPage = () => {
                 </label>
               </th>
               <th>Name</th>
-              <th>Date</th>
+              <th className='hidden sm:block'>Date</th>
               <th>Budget</th>
               <th></th>
             </tr>

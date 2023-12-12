@@ -3,7 +3,7 @@ import { FaFileArchive } from "react-icons/fa";
 
 const ApproveRequestModal = () => {
   return (
-    <div>
+    <div className='w-full max-w-xs'>
         <h1 className='font-bold text-xl'>Request Details</h1>
         <div className='flex flex-col gap-3 mt-4'>
             <div>

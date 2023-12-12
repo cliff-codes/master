@@ -25,19 +25,18 @@ const TableRow = ({isChecked, handleCheckBoxChange, index}) => {
                     </div>
                   </div>
                   <div>
-                    <div className="font-bold">Hart Hagerty</div>
+                    <div className="text-xs font-bold sm:text-base">Hart Hagerty</div>
                   </div>
                 </div>
               </td>
-              <td>
+              <td className='text-xs sm:text-base hidden sm:block'>
                 10/12/2023
               </td>
-              <td className='font-medium'>
+              <td className='font-medium text-xs'>
                 1200.00
               </td>
-              <td className='z-100 '>
-                    {/* You can open the modal using document.getElementById('ID').showModal() method */}
-                    <button className="btn" onClick={()=>document.getElementById('my_modal_3').showModal()}>
+              <td>
+                    <button className="bg-slate-200 rounded-md px-1 hover:bg-slate-200" onClick={()=>document.getElementById('my_modal_3').showModal()}>
                       <RxDotsHorizontal size={24}/>
                     </button>
                     <dialog id="my_modal_3" className="modal">
