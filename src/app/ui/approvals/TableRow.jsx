@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
-import { RxDotsHorizontal } from "react-icons/rx";
+import { RxDotsHorizontal } from "react-icons/rx"
+import ApproveRequestModal from "../../ui/approvals/ApproveRequestModal"
 
 
 
@@ -36,16 +37,21 @@ const TableRow = ({isChecked, handleCheckBoxChange, index}) => {
                 <span><button className='btn bg-red-500 text-red-200 hover:bg-red-600'>decline</button></span>
               </td>
               <td className='z-100 '>
-                <button className="btn btn-ghost btn-xs">
-                    <div className="dropdown dropdown-top dropdown-end">
-                        <div tabIndex={0} role="button" className=""><RxDotsHorizontal size={24}/></div>
-                            <ul tabIndex={0} className="dropdown-content  z-100 menu p-2 shadow bg-base-100 rounded-box w-40">
-                                <li><a>total cost</a></li>
-                                <li><a>budget</a></li>
-                                <li><a>documents</a></li>
-                            </ul>
-                        </div>
+                    {/* You can open the modal using document.getElementById('ID').showModal() method */}
+                    <button className="btn" onClick={()=>document.getElementById('my_modal_3').showModal()}>
+                      <RxDotsHorizontal size={24}/>
                     </button>
+                    <dialog id="my_modal_3" className="modal">
+                      <div className="modal-box">
+                        <form method="dialog">
+                          {/* if there is a button in form, it will close the modal */}
+                          <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                        </form>
+
+                        {/* Approve request modal section */}
+                        <ApproveRequestModal/>
+                      </div>
+                    </dialog>
               </td>
             </tr>
     </>
