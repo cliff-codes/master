@@ -9,7 +9,7 @@ const NavBar = () => {
 
   return (
     <div className='w-full h-16 bg-slate-100 rounded-lg flex place-items-center justify-between px-2'>
-        <h1 className='capitalize sm:text-lg'>
+        <h1 className='capitalize sm:text-lg text-2xl'>
             {routeName}
         </h1>
 

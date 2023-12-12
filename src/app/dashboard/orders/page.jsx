@@ -1,13 +1,12 @@
 'use client'
-import React,{useState} from 'react'
+import React, {useState} from 'react'
 import NavBar from '../../ui/dashbaord/NavBar'
-import TableRow from '../../ui/approvals/TableRow'
-import { IoIosArrowDown } from "react-icons/io";
 
+import OrderTableRow from '../../ui/orders/OrderTableRow'
+import {IoIosArrowDown} from 'react-icons/io'
 
-const ApprovalsPage = () => {
-
-  const [checkAll, setCheckAll] = useState(false)
+const OrdersPage = () => {
+    const [checkAll, setCheckAll] = useState(false)
   const [checkboxes, setCheckboxes] = useState(Array(2).fill(false))
 
   const handleCheckAll = () => {
@@ -15,6 +14,7 @@ const ApprovalsPage = () => {
     setCheckboxes((prevCheckboxes) => prevCheckboxes.map(() => !checkAll))
   }
 
+  
   const handleCheckboxChange = (index) => {
     setCheckboxes((prevCheckboxes) => {
       const updatedCheckboxes = [...prevCheckboxes];
@@ -59,9 +59,9 @@ const ApprovalsPage = () => {
                   <input type="checkbox" className="checkbox" checked = {checkAll} onChange={handleCheckAll} />
                 </label>
               </th>
-              <th>Name</th>
+              <th>Order Id</th>
               <th>Date</th>
-              <th>Action</th>
+              <th>Status</th>
               <th></th>
             </tr>
           </thead>
@@ -69,15 +69,15 @@ const ApprovalsPage = () => {
             {/* row 1 */}
             {
               checkboxes.map((isChecked, index) => (
-                <TableRow key={index} isChecked = {isChecked} handleCheckBoxChange = {handleCheckboxChange} index={index}/>
+                <OrderTableRow key={index} isChecked = {isChecked} handleCheckBoxChange = {handleCheckboxChange} index={index}/>
               ))
             }
           </tbody>
           {/* foot */}
           </table>
         </div>
-    </div> 
+    </div>
   )
 }
 
-export default ApprovalsPage
+export default OrdersPage
