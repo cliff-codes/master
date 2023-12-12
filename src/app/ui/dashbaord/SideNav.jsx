@@ -27,11 +27,9 @@ const SideNav = () => {
 
             <SideNavLink name={'Approvals'} route={'/dashboard/approvals'} icon={<FaUserCheck size={24}/>}/>
 
-            <SideNavLink name={'Orders'} route={'/dashboard/orders'} icon={<FaCartShopping size={24}/>}/>
-
             <SideNavLink name={'Analytics'} route={'/dashboard/analytics'} icon={<MdAnalytics size={24}/>}/>
 
-            <SideNavLink name={'User-Managment'} route={'/dashboard/suppliers/user-managment'} icon={<MdManageAccounts size={27}/>}/>
+            <SideNavLink name={'User-Managment'} route={'/dashboard/user-management'} icon={<MdManageAccounts size={27}/>}/>
         </div>
     </div>
   )

@@ -30,8 +30,8 @@ const ApproveRequestModal = () => {
         </div>
 
         <div className='w-full flex flex-col gap-3 mt-8'>
-            <button className='btn btn-success text-white w-full' >approve request</button>
-            <button className='btn btn-error text-white w-full' >decline request</button>
+            <button className='btn btn-success rounded-3xl text-white w-full' >approve request</button>
+            <button className='btn btn-error rounded-3xl text-white w-full' >decline request</button>
         </div>
     </div>
   )
