@@ -3,7 +3,9 @@ import React from 'react'
 import SideNavLink from './SideNavLink'
 import {MdSpaceDashboard, MdManageAccounts, MdAnalytics, MdAdminPanelSettings} from 'react-icons/md'
 import {FaUserCheck} from 'react-icons/fa'
-import {FaCartShopping} from 'react-icons/fa6'
+import { TiHome } from "react-icons/ti";
+import { DiGoogleAnalytics } from "react-icons/di";
+import { RiUserSettingsFill } from "react-icons/ri";
 
 
 const SideNav = () => {
@@ -23,13 +25,13 @@ const SideNav = () => {
 
         {/* side navigation links */}
         <div className='w-full flex flex-col gap-4 '>
-            <SideNavLink name={'Dashboard'} route = {'/dashboard'} icon={<MdSpaceDashboard size={24} />}/>
+            <SideNavLink name={'Dashboard'} route = {'/dashboard'} icon={<TiHome size={24} className='xss:text-xs' />}/>
 
             <SideNavLink name={'Approvals'} route={'/dashboard/approvals'} icon={<FaUserCheck size={24}/>}/>
 
-            <SideNavLink name={'Analytics'} route={'/dashboard/analytics'} icon={<MdAnalytics size={24}/>}/>
+            <SideNavLink name={'Analytics'} route={'/dashboard/analytics'} icon={<DiGoogleAnalytics size={24}/>}/>
 
-            <SideNavLink name={'User-Management'} route={'/dashboard/user-management'} icon={<MdManageAccounts size={24}/>}/>
+            <SideNavLink name={'User-Management'} route={'/dashboard/user-management'} icon={<RiUserSettingsFill size={24}/>}/>
         </div>
     </div>
   )
