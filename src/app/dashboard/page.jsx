@@ -2,6 +2,7 @@ import React from 'react'
 import NavBar from '../ui/dashbaord/NavBar'
 import StatsCard from '../ui/dashbaord/cards/StatsCard'
 import ChartTest from '../ui/dashbaord/charts/ChartTest'
+import DashBarChart from '../ui/dashbaord/charts/DashBarChart'
 
 const DashboardPage = () => {
   return (
@@ -18,14 +19,14 @@ const DashboardPage = () => {
           <div className='w-full grid grid-cols-1 lg:grid-cols-2 my-7 gap-10'>
             <div className='w-full h-60'>
               <h1>Price Monitor</h1>
-              <div className='w-full h-full bg-slate-100 shadow-lg mb-3 rounded-sm'>
+              <div className='w-full h-full rounded-xl shadow-lg mb-3 py-3'>
                 <ChartTest/>
               </div>
             </div>
             <div className='w-full h-60'>
               <h1>Total Purchase Order</h1>
-              <div className='w-full h-full bg-slate-100 shadow-lg mb-3 rounded-sm'>
-                  
+              <div className='w-full h-full rounded-xl shadow-lg mb-3 py-3'>
+                  <DashBarChart/>
               </div>
             </div>
           </div>

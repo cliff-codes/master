@@ -31,7 +31,7 @@ const ApprovalsPage = () => {
   };
 
   return (
-    <div className='flex-1 mt-3 mr-3 w-full max-w-xs'>
+    <div className='flex-1 mt-3 mr-3 w-full sm:max-w-full max-xs:w-full'>
         <NavBar/>
         
         <div className="pt-14">
@@ -50,7 +50,7 @@ const ApprovalsPage = () => {
             </div> : null
             }
           </div>
-          <table className="table border max-w-sm will-change-transform">
+          <table className="table border max-full sm:max-w-full">
           {/* head */}
           <thead>
             <tr className=''>
