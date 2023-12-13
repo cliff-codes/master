@@ -16,8 +16,8 @@ const DashboardPage = () => {
             <StatsCard title={"Material Outstanding"} totalCount={80} percentageIncrease={'24%'} />
           </div>
 
-          <div className='w-full grid grid-cols-1 lg:grid-cols-2 my-7 gap-10'>
-            <div className='w-full h-60'>
+          <div className='w-full grid grid-cols-1 my-7 gap-16'>
+            <div className='w-full h-72'>
               <h1>Price Monitor</h1>
               <div className='w-full h-full rounded-xl shadow-lg mb-3 py-3'>
                 <ChartTest/>

@@ -9,7 +9,7 @@ import {FaCartShopping} from 'react-icons/fa6'
 const SideNav = () => {
     
   return (
-    <div className='min-h-screen w-11 sm:w-72 transition-all 200 ease-in bg-slate-100 rounded-lg  pt-3 px-1'>
+    <div className='min-h-screen w-11 sm:w-72 transition-all 200 ease-in  rounded-lg  pt-3 px-1 shadow-lg'>
 
         <div className='w-full'>
             <div className='w-full flex place-items-center'>
@@ -23,13 +23,13 @@ const SideNav = () => {
 
         {/* side navigation links */}
         <div className='w-full flex flex-col gap-4 '>
-            <SideNavLink name={'Dashboard'} route = {'/dashboard'} icon={<MdSpaceDashboard size={24}/>}/>
+            <SideNavLink name={'Dashboard'} route = {'/dashboard'} icon={<MdSpaceDashboard size={24} />}/>
 
             <SideNavLink name={'Approvals'} route={'/dashboard/approvals'} icon={<FaUserCheck size={24}/>}/>
 
             <SideNavLink name={'Analytics'} route={'/dashboard/analytics'} icon={<MdAnalytics size={24}/>}/>
 
-            <SideNavLink name={'User-Managment'} route={'/dashboard/user-management'} icon={<MdManageAccounts size={24}/>}/>
+            <SideNavLink name={'User-Management'} route={'/dashboard/user-management'} icon={<MdManageAccounts size={24}/>}/>
         </div>
     </div>
   )
