@@ -1,7 +1,7 @@
 
 import React from 'react'
 import SideNavLink from './SideNavLink'
-import {MdSpaceDashboard, MdManageAccounts, MdAnalytics, MdAdminPanelSettings} from 'react-icons/md'
+import {MdAdminPanelSettings} from 'react-icons/md'
 import {FaUserCheck} from 'react-icons/fa'
 import { TiHome } from "react-icons/ti";
 import { DiGoogleAnalytics } from "react-icons/di";
@@ -11,9 +11,9 @@ import { RiUserSettingsFill } from "react-icons/ri";
 const SideNav = () => {
     
   return (
-    <div className='min-h-screen w-11 sm:w-72 transition-all 200 ease-in  rounded-lg  pt-3 px-1 shadow-lg'>
+    <div className='min-h-screen w-11 sm:w-72 transition-all 200 ease-in  rounded-l-none rounded-r-lg  pt-3 px-1 shadow-lg bg-slate-800'>
 
-        <div className='w-full'>
+        <div className='w-full text-slate-50'>
             <div className='w-full flex place-items-center'>
                 <MdAdminPanelSettings size={30} />
                 <h1 className='text-2xl font-bold  p-4 hidden sm:block transition-all 200 ease-linear'>Admin</h1>

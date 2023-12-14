@@ -2,7 +2,7 @@
 import React,{useState} from 'react'
 import NavBar from '../../ui/dashbaord/NavBar'
 import TableRow from '../../ui/approvals/TableRow'
-import { IoIosArrowDown } from "react-icons/io";
+import { TbArrowsSort } from "react-icons/tb";
 
 
 const ApprovalsPage = () => {
@@ -37,7 +37,7 @@ const ApprovalsPage = () => {
         <div className="pt-14">
           <div className='w-full flex justify-between mb-2 place-items-center'>
             <div className="dropdown dropdown-right">
-              <div tabIndex={0} role="button" className="btn m-1">sort by <span><IoIosArrowDown/></span></div>
+              <div tabIndex={0} role="button" className=" h-8 bg-slate-300 px-2 m-1 flex gap-1 hover:bg-slate-200 text-xs transition-all 100s ease-out place-items-center rounded-lg sm:text-base">sort by <span><TbArrowsSort size={16}/></span></div>
               <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
                 <li><a>Date</a></li>
                 <li><a>Status </a></li>
