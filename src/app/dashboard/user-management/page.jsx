@@ -10,7 +10,7 @@ const UserManagementPage = () => {
       <div className='mt-6'>
         <h1 className='text-base sm:text-xl'>Users Lists</h1>
         <div className='w-full flex justify-end'>
-          <Link href={'/user-management/adduser'}>
+          <Link href={'/dashboard/user-management/adduser'}>
             <button className='btn  btn-sm'>
             add user</button>
           </Link>
