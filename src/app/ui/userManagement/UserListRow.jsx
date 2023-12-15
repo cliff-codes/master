@@ -15,12 +15,12 @@ const UserListRow = ({isChecked, handleCheckBoxChange, index}) => {
                 <td>
                 <div className="flex items-center gap-3">
                     <div className="avatar">
-                    <div className="mask mask-squircle w-12 h-12 hidden">
-                        <Image src="/pic.jpg" width={30} height={30} alt="user image" />
+                    <div className="mask mask-squircle w-8 h-12 hidden">
+                        <Image src="/pic.jpg" width={20} height={20} quality={70} alt="user image" />
                     </div>
                     </div>
                     <div>
-                    <div className="font-bold text-xs">Hart Hagerty</div>
+                    <div className="font-bold text-xs xs:text-sm">Hart Hagerty</div>
                     </div>
                 </div>
                 </td>

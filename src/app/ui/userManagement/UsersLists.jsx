@@ -30,14 +30,14 @@ const UsersLists = () => {
 
 
   return (
-    <div className="w-full overflow-x-auto mt-2">
-        <table className="table border rounded-sm">
+    <div className="w-full mt-2">
+        <table className="table border w-full">
             {/* head */}
             <thead>
             <tr>
                 <th>
                 <label>
-                    <input type="checkbox" className="checkbox w-5 h-5" checked = {checkAll} onChange={handleCheckAll}/>
+                    <input type="checkbox" className="checkbox w-5 h-5"checked = {checkAll} onChange={handleCheckAll}/>
                 </label>
                 </th>
                 <th>Name</th>
