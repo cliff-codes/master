@@ -9,14 +9,16 @@ const SideNavLink = ({name , route, icon}) => {
 
     const routeName = pathname.split('/').pop()
   return (
-    <div className='group'>
-        <Link href={route} className={clsx('w-full flex place-items-center gap-2 pl-2 py-3 px-2 hover:bg-slate-600 hover:text-white text-slate-400 transition-all 100 ease-linear rounded-md group', {
-            'bg-slate-600 text-white' : routeName === name.toLowerCase()
-        })}>
+    <Link href={route} className={clsx('w-full group   hover:bg-slate-600 hover:text-white text-slate-400 transition-all 100 ease-linear rounded-md group', {
+      'bg-slate-600 text-white' : routeName === name.toLowerCase()
+  })}>
+      <div>
+        <div className='flex place-items-center gap-2 pl-2 py-3 px-2'>
             {icon}
-            <button className='hidden sm:flex '>{name}</button>
-        </Link>
+            <button className='sm:flex '>{name}</button>
+        </div>
     </div>
+    </Link>
   )
 }
 
