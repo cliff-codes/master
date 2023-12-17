@@ -12,6 +12,15 @@ const MobileNav = () => {
   const pathname = usePathname()
   const currentPath = pathname.split('/').pop()
 
+  //close drawer
+  function closeDrawer(){
+    const checkbox = document.getElementById("my-drawer-3")
+    if(checkbox){
+      checkbox.checked = false
+      console.log('close function executed')
+    }
+  }
+
 
   return (
     <div className="drawer z-50 ">
@@ -33,20 +42,20 @@ const MobileNav = () => {
       <ul className=" menu p-4 w-80 min-h-full bg-slate-800">
         {/* Sidebar content here */}
         
-        <li className=''>
+        <li className='' onClick={closeDrawer}>
           <SideNavLink name={'Dashboard'} route = {'/dashboard'} icon={<TiHome size={24} className='xss:text-xs' />}/>
         </li>
 
-        <li>
+        <li  onClick={closeDrawer}>
           <SideNavLink name={'Approvals'} route={'/dashboard/approvals'} icon={<FaUserCheck size={24}/>}/>
         </li>
 
 
-        <li>
+        <li  onClick={closeDrawer}>
           <SideNavLink name={'Analytics'} route={'/dashboard/analytics'} icon={<DiGoogleAnalytics size={24}/>}/>
         </li>
 
-        <li>
+        <li  onClick={closeDrawer}>
           <SideNavLink name={'User-Management'} route={'/dashboard/user-management'} icon={<RiUserSettingsFill size={24}/>}/>
         </li>
       </ul>
