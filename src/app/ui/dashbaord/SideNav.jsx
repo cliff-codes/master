@@ -11,7 +11,7 @@ import { RiUserSettingsFill } from "react-icons/ri";
 const SideNav = () => {
     
   return (
-    <div className='sm:w-72   rounded-l-none rounded-r-lg  pt-3 px-1 shadow-lg rounded-br-none bg-slate-800 sticky top-0'>
+    <div className='sm:w-72   rounded-l-none rounded-r-lg  pt-3 px-1  rounded-br-none bg-slate-800 sticky top-0'>
 
         <div className='w-full text-slate-50'>
             <div className='w-full flex place-items-center'>
