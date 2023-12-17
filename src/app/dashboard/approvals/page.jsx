@@ -32,8 +32,7 @@ const ApprovalsPage = () => {
 
   return (
     <div className='flex-1 mt-3 mr-3 w-full sm:max-w-full max-xs:w-full'>
-        <NavBar/>
-        
+    
         <div className="pt-14">
           <div className='w-full flex justify-between mb-2 place-items-center'>
             <div className="dropdown dropdown-right">

@@ -32,7 +32,7 @@ const AddUserPage = () => {
   }
 
   return (
-    <div className='flex-1 mr-2'>
+    <div className='flex-1 mx-3 ml-5'>
       <h1 className='text-slate-600 font-medium mt-4'>Add User</h1>
       <form className='flex flex-col justify-between'>
 

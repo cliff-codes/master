@@ -30,8 +30,8 @@ const UsersLists = () => {
 
 
   return (
-    <div className="w-full mt-2">
-        <table className="table border w-full">
+    <div className="w-full mt-2 box-border">
+        <table className="table border">
             {/* head */}
             <thead>
             <tr>

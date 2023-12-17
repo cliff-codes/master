@@ -4,10 +4,11 @@ import StatsCard from '../ui/dashbaord/cards/StatsCard'
 import ChartTest from '../ui/dashbaord/charts/ChartTest'
 import DashBarChart from '../ui/dashbaord/charts/DashBarChart'
 
+
 const DashboardPage = () => {
   return (
-    <div className='flex-1 mt-3 mr-3'>
-        <NavBar/>
+    <div className='flex-1 h-full mt-3 mx-2 flex flex-col overflow-y: scroll'>
+    
         <div className='w-full'>
           {/* cards section */}
           <div className='grid grid-cols-2 sm:grid-cols-3 gap-3 mt-3'>

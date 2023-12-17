@@ -25,13 +25,13 @@ const UserListRow = ({isChecked, handleCheckBoxChange, index}) => {
                 </div>
                 </td>
                 <td className='text-xs sm:text-base'>
-                Zemlak, Daniel and Leannon
+                developer
                 <br/>
                 </td>
                 <td className='hidden sm:block'>Purple</td>
                 <th>
                 <button className="btn btn-ghost text-sm btn-xs">
-                    <MdModeEditOutline size={16}/>
+                    <MdModeEditOutline/>
                 </button>
                 </th>
             </tr>

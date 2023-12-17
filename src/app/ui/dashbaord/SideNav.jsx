@@ -11,7 +11,7 @@ import { RiUserSettingsFill } from "react-icons/ri";
 const SideNav = () => {
     
   return (
-    <div className='min-h-screen w-11 sm:w-72 transition-all 200 ease-in  rounded-l-none rounded-r-lg  pt-3 px-1 shadow-lg rounded-br-none bg-slate-800 sticky'>
+    <div className='sm:w-72   rounded-l-none rounded-r-lg  pt-3 px-1 shadow-lg rounded-br-none bg-slate-800 sticky top-0'>
 
         <div className='w-full text-slate-50'>
             <div className='w-full flex place-items-center'>
@@ -22,9 +22,8 @@ const SideNav = () => {
             <div style={{height: "1px"}} className='w-full  rounded-lg bg-slate-300 mb-4'></div>
         </div>
 
-
-        {/* side navigation links */}
-        <div className='w-full flex flex-col gap-4 '>
+        {/* side navigation links */} 
+         <div className='w-full flex flex-col gap-4 '>
             <SideNavLink name={'Dashboard'} route = {'/dashboard'} icon={<TiHome size={24} className='xss:text-xs' />}/>
 
             <SideNavLink name={'Approvals'} route={'/dashboard/approvals'} icon={<FaUserCheck size={24}/>}/>

@@ -1,17 +1,21 @@
-import React from 'react'
-import NavBar from '../../ui/dashbaord/NavBar' 
+import React from 'react' 
 import UsersLists from '../../ui/userManagement/UsersLists'
 import Link from 'next/link'
+import SearchUser from '../../ui/userManagement/adduser/SearchUser'
 
 const UserManagementPage = () => {
   return (
-    <div className='flex-1 w-full mt-3 mr-1' >
-      <NavBar/>
+    <div className='flex-1 full mt-3 mx-2 ml-4' >
+
       <div className='mt-6'>
         <h1 className='text-base sm:text-xl'>Users Lists</h1>
-        <div className='w-full flex justify-end'>
+        <div className='w-full flex justify-between place-items-center mt-5 mb-3'>
+          {/* search bar */}
+          <SearchUser/>
+
+
           <Link href={'/dashboard/user-management/adduser'}>
-          <button className="btn btn-xs sm:btn-sm md:btn-md ">add user</button>
+          <button className="btn  btn-xs h-10 w-30 px-4 relative ">+</button>
           </Link>
         </div>
       </div>
