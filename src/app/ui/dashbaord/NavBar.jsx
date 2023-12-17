@@ -13,12 +13,7 @@ const NavBar = () => {
             {routeName}
         </h1>
 
-        {/* notifications */}
-        <div>
-            <button className='h-9 hover:bg-slate-200 px-2 rounded-full transition-all 50 ease-linear'>
-                <IoMdNotifications size={20}/>
-                </button>
-        </div>
+        
     </div>
   )
 }

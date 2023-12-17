@@ -6,6 +6,7 @@ import { TiHome } from 'react-icons/ti'
 import { FaUserCheck } from 'react-icons/fa'
 import { DiGoogleAnalytics } from 'react-icons/di'
 import { RiUserSettingsFill } from 'react-icons/ri'
+import { IoMdNotifications } from 'react-icons/io'
 
 const MobileNav = () => {
 
@@ -34,6 +35,13 @@ const MobileNav = () => {
           </label>
         </div> 
         <div className="flex-1 px-2 mx-2 uppercase font-semibold">{currentPath}</div>
+
+        {/* notifications */}
+        <div>
+            <button className='h-9 hover:bg-slate-200 px-2 rounded-full transition-all 50 ease-linear'>
+                <IoMdNotifications size={20}/>
+                </button>
+        </div>
       </div>
 
     </div> 
