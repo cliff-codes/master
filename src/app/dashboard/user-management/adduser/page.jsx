@@ -84,7 +84,7 @@ const AddUserPage = () => {
             </label>
           </div>
         </div>
-        <div className='mt-10'>
+        <div className='mt-4'>
           <button className="btn  sm:btn-sm md:btn-md  btn-success text-slate-50 w-full mt-4 h-10 sm:h-14">add user</button>
         </div>
       </form>
