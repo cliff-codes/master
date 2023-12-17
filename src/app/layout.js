@@ -15,13 +15,13 @@ export default function RootLayout({ children }) {
       <body className={inter.className} style={{
         margin: "0",
         padding: "0",
-        minHeight: "100vh",
-        height: "100%",
+        height: "100vh",
+        
         display: "flex",
         boxSizing: "border-box",
-        gap: "24px",
+        overflowY: "hidden"
       }}>
-        <div className='hidden min-h-full lg:block sticky top-0 bg-slate-800'><SideNav/></div>
+        <div className='hidden h-screen  lg:block sticky top-0 bg-slate-800'><SideNav/></div>
         {children}
       </body>
     </html>
