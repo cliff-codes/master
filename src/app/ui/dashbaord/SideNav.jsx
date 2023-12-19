@@ -28,7 +28,7 @@ const SideNav = () => {
 
             <SideNavLink name={'Approvals'} route={'/dashboard/approvals'} icon={<FaUserCheck size={24}/>}/>
 
-            <SideNavLink name={'Analytics'} route={'/dashboard/analytics'} icon={<DiGoogleAnalytics size={24}/>}/>
+            <SideNavLink name={'Analytics&Reports'} route={'/dashboard/analytics&reports'} icon={<DiGoogleAnalytics size={24}/>}/>
 
             <SideNavLink name={'User-Management'} route={'/dashboard/user-management'} icon={<RiUserSettingsFill size={24}/>}/>
         </div>

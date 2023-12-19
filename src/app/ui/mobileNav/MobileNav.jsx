@@ -18,7 +18,6 @@ const MobileNav = () => {
     const checkbox = document.getElementById("my-drawer-3")
     if(checkbox){
       checkbox.checked = false
-      console.log('close function executed')
     }
   }
 
@@ -60,7 +59,7 @@ const MobileNav = () => {
 
 
         <li  onClick={closeDrawer}>
-          <SideNavLink name={'Analytics'} route={'/dashboard/analytics'} icon={<DiGoogleAnalytics size={24}/>}/>
+          <SideNavLink name={'Analytics&Reports'} route={'/dashboard/analytics&reports'} icon={<DiGoogleAnalytics size={24}/>}/>
         </li>
 
         <li  onClick={closeDrawer}>
