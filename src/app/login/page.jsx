@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import {FaGithub, FaGoogle} from "react-icons/fa"
+
 
 const LoginPage = () => {
   return (

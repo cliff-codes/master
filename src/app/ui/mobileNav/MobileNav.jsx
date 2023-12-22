@@ -1,15 +1,17 @@
 'use client'
-import React from 'react'
+import React, {useState} from 'react'
 import { usePathname } from 'next/navigation'
 import SideNavLink from '../dashbaord/SideNavLink'
 import { TiHome } from 'react-icons/ti'
-import { FaUserCheck } from 'react-icons/fa'
+import { FaMoneyCheckAlt, FaUserCheck } from 'react-icons/fa'
 import { DiGoogleAnalytics } from 'react-icons/di'
-import { RiUserSettingsFill } from 'react-icons/ri'
+import { RiFileAddFill, RiUserSettingsFill } from 'react-icons/ri'
 import { IoMdNotifications } from 'react-icons/io'
+import { FileSignature } from 'lucide-react'
+
 
 const MobileNav = () => {
-
+  const [isAdmin, setIsAdmin] = useState(true)
   const pathname = usePathname()
   const currentPath = pathname.split('/').pop()
 
@@ -48,7 +50,13 @@ const MobileNav = () => {
       <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label> 
       <ul className=" menu p-4 w-80 min-h-full bg-slate-800">
         {/* Sidebar content here */}
-        
+        {isAdmin ? <>
+          <li onClick={closeDrawer}><SideNavLink route={'/'} icon={<RiFileAddFill size={24}/>} name={"New Requisition"} /></li>
+            <li onClick={closeDrawer}><SideNavLink route={'/'} icon={<FileSignature size={24}/>} name={"Manage Requistion"} /></li>
+            <li onClick={closeDrawer}><SideNavLink route={'/'} icon={<FaMoneyCheckAlt size={24}/>} name={"Budget"} /></li>
+            <li onClick={closeDrawer}><SideNavLink route={'/'} icon={<FaUserCheck size={24}/>} name={"Approved Vendors"} /></li>
+        </>: <>
+        {/* admin user nav links */}
         <li className='' onClick={closeDrawer}>
           <SideNavLink name={'Dashboard'} route = {'/dashboard'} icon={<TiHome size={24} className='xss:text-xs' />}/>
         </li>
@@ -65,6 +73,8 @@ const MobileNav = () => {
         <li  onClick={closeDrawer}>
           <SideNavLink name={'User-Management'} route={'/dashboard/user-management'} icon={<RiUserSettingsFill size={24}/>}/>
         </li>
+        </>
+        }
       </ul>
     </div>
   </div>
