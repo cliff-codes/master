@@ -13,8 +13,9 @@ const LoginPage = () => {
                 <div className='flex place-items-center gap-4'>
                     <div>Login As:</div>
                     <select className='rounded-md'>
-                        <option >Employee</option>
-                        <option>Admin</option>
+                        <option >Administrator</option>
+                        <option>Procurement Officer</option>
+                        <option>Budget Owner</option>
                     </select>
                 </div>
 
