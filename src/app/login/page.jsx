@@ -10,12 +10,11 @@ const LoginPage = () => {
              <div className=' w-full flex flex-col gap-3 place-items-center '>
 
                 {/* select user type */}
-                <div className='flex place-items-center gap-4'>
-                    <div>Login As:</div>
-                    <select className='rounded-md'>
-                        <option >Administrator</option>
-                        <option>Procurement Officer</option>
-                        <option>Budget Owner</option>
+                <div className='w-full flex place-items-center gap-4 justify-center'>
+                    <div className='text-sm '>login as:</div>
+                    <select className='rounded-md text-sm xs:text-base'>
+                        <option >Employee</option>
+                        <option>Supplier</option>
                     </select>
                 </div>
 
@@ -35,9 +34,6 @@ const LoginPage = () => {
              <Link href={'/dashboard'} className='w-full'>
                 <button className='btn hover:bg-slate-900 hover:text-slate-50 w-full'>login</button>
              </Link>
-    
-            
-           
         </form>
     </div>
   )
