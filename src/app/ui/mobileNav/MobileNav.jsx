@@ -7,10 +7,11 @@ import { FaMoneyCheckAlt, FaUserCheck } from 'react-icons/fa'
 import { DiGoogleAnalytics } from 'react-icons/di'
 import { RiFileAddFill, RiUserSettingsFill } from 'react-icons/ri'
 import { IoMdNotifications } from 'react-icons/io'
-import { FileSignature } from 'lucide-react'
+import { FileSignature, LogOut } from 'lucide-react'
 import { TbShoppingCartCog } from "react-icons/tb";
-import {MdAccountBalance} from "react-icons/md"
+import {MdAccountBalance, MdLogout} from "react-icons/md"
 import { GrUserAdmin } from "react-icons/gr"
+import Link from 'next/link'
 
 
 
@@ -59,24 +60,24 @@ const MobileNav = () => {
       <ul className=" menu p-4 w-80 min-h-full bg-slate-800">
         {/* Sidebar content here */}
         {longinStatus === "Employee" ? <>
-          <li onClick={closeDrawer}><SideNavLink route={'/'} icon={<TiHome size={24}/>} name={"Home"} /></li>
+          <li onClick={closeDrawer}><SideNavLink route={'/employee'} icon={<TiHome size={24}/>} name={"Home"} /></li>
 
             <li className='pl-2'>
-              <details open className='text-slate-400'>
+              <details close className='text-slate-400'>
                 <summary className='hover:bg-slate-600 hover:text-slate-50 py-3'> <span><TbShoppingCartCog size={24}/></span> Procurements</summary>
                 <ul> 
-                  <li className='hover:bg-slate-600 hover:text-slate-50 py-3 rounded-md'><a>Submenu 1</a></li>
-                  <li className='hover:bg-slate-600 hover:text-slate-50 py-3 rounded-md'><a>Submenu 2</a></li>
+                <li className='hover:bg-slate-600 hover:text-slate-50 py-3 rounded-md'><Link href={'/employee/create-RFQ'}>Create request for quotation</Link></li>
+                  <li className='hover:bg-slate-600 hover:text-slate-50 py-3 rounded-md'><Link href={'/create-rfq'}>Process RFQ</Link></li>
                 </ul>
               </details>
             </li>
 
             <li className='pl-2 mt-1'>
-              <details open className='text-slate-400'>
+              <details close className='text-slate-400'>
                 <summary className='hover:bg-slate-600 hover:text-slate-50 py-3'> <span><FaMoneyCheckAlt size={24}/></span> Accounts Payable</summary>
                 <ul> 
-                  <li className='hover:bg-slate-600 hover:text-slate-50 py-3 rounded-md'><a>Submenu 1</a></li>
-                  <li className='hover:bg-slate-600 hover:text-slate-50 py-3 rounded-md'><a>Submenu 2</a></li>
+                  <li className='hover:bg-slate-600 hover:text-slate-50 py-3 rounded-md'><Link href={'/create-rfq'}>Create request for quotation</Link></li>
+                  <li className='hover:bg-slate-600 hover:text-slate-50 py-3 rounded-md'><Link href={'/create-rfq'}>Process RFQ</Link></li>
                 </ul>
               </details>
             </li>
@@ -84,6 +85,10 @@ const MobileNav = () => {
           
             <li onClick={closeDrawer}><SideNavLink route={'/'} icon={<MdAccountBalance size={24}/>} name={"Budget Maintenance "} /></li>
             <li onClick={closeDrawer}><SideNavLink route={'/'} icon={<GrUserAdmin size={24}/>} name={"System Administrator "} /></li>
+            <li>
+              <SideNavLink name={"Logout"} route={'/login'} icon={<MdLogout size={24}/>}/>
+            </li>
+
         </>: <>
         {/* admin user nav links */}
         <li className='' onClick={closeDrawer}>

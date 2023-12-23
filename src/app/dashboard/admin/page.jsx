@@ -1,6 +1,6 @@
 
 import React from 'react'
-import OverviewCard from '../../ui/admin/OverviewCard'
+import OverviewCard from '../../ui/cards/OverviewCard'
 import AlertsTable from '../../ui/admin/AlertsTable'
 import RequisitionsTable from '../../ui/admin/RequisitionsTable'
 
