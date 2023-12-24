@@ -1,4 +1,5 @@
 import React from 'react'
+import RfqItemsTableRow from '../../ui/tables/RfqItemsTableRow'
 
 const CreateRFQPage = () => {
   return (
@@ -35,7 +36,7 @@ const CreateRFQPage = () => {
                     <div className="label">
                         <span className="label-text">RFQ Number</span>
                     </div>
-                    <input type="text" disabled = "true" className="input input-bordered w-full max-w-xs focus:outline-none focus:border-slate-600" />
+                    <input type="text" disabled = {true} className="input input-bordered w-full max-w-xs focus:outline-none focus:border-slate-600" />
                     <button type='button' className='btn btn-sm mt-1  font-normal bg-slate-600 text-slate-50 hover:bg-slate-800'>generate</button>
                 </label>
             </div>
@@ -78,7 +79,7 @@ const CreateRFQPage = () => {
                 </div>
                 
                 {/* adding created rfq item to already created rfq items */}
-                <button className='btn w-full mt-2 bg-green-600 text-slate-50 hover:bg-green-700'>add item</button>
+                <button className='btn w-full mt-2 btn-success text-slate-50'>add item</button>
             </div>
         </form>
 
@@ -86,7 +87,8 @@ const CreateRFQPage = () => {
         {/* table displaying items created in this quote */}
         <div className='mt-14'>
             <div className="overflow-x-auto">
-                <table className="table table-zebra">
+                <h1 className = "font-semibold">RFQ Items</h1>
+                <table className="table table-zebra-zebra">
                     {/* head */}
                     <thead>
                     <tr>
@@ -94,30 +96,16 @@ const CreateRFQPage = () => {
                         <th>RFQ_Number</th>
                         <th>RFQ Item Description</th>
                         <th>RFQ Item Qty</th>
+                        <th></th>
                     </tr>
                     </thead>
                     <tbody>
                     {/* row 1 */}
-                    <tr>
-                        <th>1</th>
-                        <td>RFQ0001</td>
-                        <td>Quality Control Specialist</td>
-                        <td>12</td>
-                    </tr>
-                    {/* row 2 */}
-                    <tr>
-                        <th>2</th>
-                        <td>RFQ0002</td>
-                        <td>Desktop Support Technician</td>
-                        <td>123</td>
-                    </tr>
-                    {/* row 3 */}
-                    <tr>
-                        <th>3</th>
-                        <td>RFQ0003</td>
-                        <td>Tax Accountant</td>
-                        <td>08</td>
-                    </tr>
+                        <RfqItemsTableRow/>
+                        <RfqItemsTableRow/>
+                        <RfqItemsTableRow/>
+                        <RfqItemsTableRow/>
+                        <RfqItemsTableRow/>
                     </tbody>
                 </table>
             </div>
