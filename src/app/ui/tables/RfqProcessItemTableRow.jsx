@@ -7,8 +7,7 @@ const RfqProcessItemTableRow = () => {
         <th>RFQ0001</th>
         <td>12/24/20323</td>
         <td>12/30/20323</td>
-        <td>Silver macbook pro</td>
-        <td>None</td>
+        
         <td>
             <Link href={'/employee/rfq-item-details'}>
                 <button className='btn btn-success btn-sm text-slate-50'>view</button>

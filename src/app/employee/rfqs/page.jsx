@@ -19,9 +19,7 @@ function RfqPage() {
               <tr className='bg-slate-800 text-slate-50'>
                 <th>RFQ Number</th>
                 <th>RFQ Date Created</th>
-                <th>RFQ Expiry Date</th>
-                <th>RFQ Description</th>
-                <th>RFQ Condition</th>
+                <th>RFQ Expiry Date</th> 
                 <th>Details</th>
               </tr>
             </thead>
