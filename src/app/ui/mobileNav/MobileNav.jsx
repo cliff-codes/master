@@ -66,8 +66,8 @@ const MobileNav = () => {
               <details close className='text-slate-400'>
                 <summary className='hover:bg-slate-600 hover:text-slate-50 py-3'> <span><TbShoppingCartCog size={24}/></span> Procurements</summary>
                 <ul> 
-                <li className='hover:bg-slate-600 hover:text-slate-50 py-3 rounded-md'><Link href={'/employee/create-RFQ'}>Create request for quotation</Link></li>
-                  <li className='hover:bg-slate-600 hover:text-slate-50 py-3 rounded-md'><Link href={'/create-rfq'}>Process RFQ</Link></li>
+                  <li onClick={closeDrawer} className='hover:bg-slate-600 hover:text-slate-50 py-3 rounded-md'><Link href={'/employee/create-RFQ'} >Create request for quotation</Link></li>
+                  <li onClick={closeDrawer} className='hover:bg-slate-600 hover:text-slate-50 py-3 rounded-md'><Link href={'/employee/rfqs'}>Process RFQ</Link></li>
                 </ul>
               </details>
             </li>
@@ -76,8 +76,8 @@ const MobileNav = () => {
               <details close className='text-slate-400'>
                 <summary className='hover:bg-slate-600 hover:text-slate-50 py-3'> <span><FaMoneyCheckAlt size={24}/></span> Accounts Payable</summary>
                 <ul> 
-                  <li className='hover:bg-slate-600 hover:text-slate-50 py-3 rounded-md'><Link href={'/create-rfq'}>Create request for quotation</Link></li>
-                  <li className='hover:bg-slate-600 hover:text-slate-50 py-3 rounded-md'><Link href={'/create-rfq'}>Process RFQ</Link></li>
+                  <li onClick={closeDrawer} className='hover:bg-slate-600 hover:text-slate-50 py-3 rounded-md'><Link href={'/create-rfq'}>Create request for quotation</Link></li>
+                  <li onClick={closeDrawer}  className='hover:bg-slate-600 hover:text-slate-50 py-3 rounded-md'><Link href={'/create-rfq'}>Process RFQ</Link></li>
                 </ul>
               </details>
             </li>

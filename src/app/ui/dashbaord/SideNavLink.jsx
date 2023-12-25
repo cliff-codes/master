@@ -6,7 +6,7 @@ import clsx from 'clsx'
 
 const SideNavLink = ({name , route, icon}) => {
     const pathname = usePathname()
-ca
+    
     const routeName = pathname.split('/').pop()
   return (
     <Link href={route} className={clsx('w-full group   hover:bg-slate-600 hover:text-white text-slate-400 transition-all 100 ease-linear rounded-md group', {
