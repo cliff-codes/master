@@ -11,33 +11,27 @@ const CreateRFQPage = () => {
             <div className='flex gap-4'>
                 <label className="form-control w-full max-w-xs">
                     <div className="label">
-                        <span className="label-text">Employee ID</span>
-                    </div>
-                    <input type="text" defaultValue={"EMP00001"} disabled = {true} placeholder='EMP00001' className="input input-bordered w-full max-w-xs focus:outline-none focus:border-slate-600" />
-                </label>
-
-                <label className="form-control w-full max-w-xs">
-                    <div className="label">
                         <span className="label-text">Date Created</span>
                     </div>
                     <input type="text" defaultValue={"23/12/2023"} disabled = {true} placeholder='23/12/2023' className="input input-bordered w-full max-w-xs focus:outline-none focus:border-slate-600" />
                 </label>
-            </div>
 
-            <div className='flex gap-4'>
                 <label className="form-control w-full max-w-xs">
                     <div className="label">
                         <span className="label-text">Closing Date</span>
                     </div>
                     <input type="date" className="input w-full max-w-xs focus:outline-none bg-slate-100 focus:border-slate-600" />
                 </label>
+            </div>
 
-                <label className="form-control w-full max-w-xs">
+            <div className='flex gap-4'>
+
+                <label className="form-control w-full">
                     <div className="label">
                         <span className="label-text">RFQ Number</span>
                     </div>
-                    <input type="text" disabled = {true} className="input input-bordered w-full max-w-xs focus:outline-none focus:border-slate-600" />
-                    <button type='button' className='btn btn-sm mt-1  font-normal bg-slate-600 text-slate-50 hover:bg-slate-800'>generate</button>
+                    <input type="text" disabled = {true} className="input input-bordered w-full  focus:outline-none focus:border-slate-600" />
+                    <button type='button' className='btn btn-md mt-1  font-normal bg-slate-600 text-slate-50 hover:bg-slate-800'>generate</button>
                 </label>
             </div>
 

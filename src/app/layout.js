@@ -1,6 +1,6 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
-import SideNav from './ui/dashbaord/SideNav'
+import SideNavType from './ui/sideNavs/SideNavType'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,12 +16,11 @@ export default function RootLayout({ children }) {
         margin: "0",
         padding: "0",
         height: "100vh",
-        
         display: "flex",
         boxSizing: "border-box",
         overflowY: "hidden"
       }}>
-        <div className='hidden h-screen  lg:block sticky top-0 bg-slate-800'><SideNav/></div>
+        <div className='hidden h-screen  lg:block sticky top-0 bg-slate-800'><SideNavType/></div>
         {children}
       </body>
     </html>

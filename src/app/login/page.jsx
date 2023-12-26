@@ -10,20 +10,21 @@ const LoginPage = () => {
              <div className=' w-full flex flex-col gap-3 place-items-center '>
 
                 {/* select user type */}
-                <div className='w-full flex place-items-center gap-4 justify-center'>
-                    <div className='text-sm '>login as:</div>
-                    <select className='rounded-md text-sm xs:text-base'>
-                        <option >Employee</option>
-                        <option>Supplier</option>
+                <div className='w-full '>
+                    <div className='text-sm font-bold mb-1'>login as:</div>
+                    <select className='rounded-md text-sm xs:text-base w-full'>
+                        <option >Admin</option>
+                        <option >Procurement Officer</option>
+                        <option>Budget Owner</option>
                     </select>
                 </div>
 
                <div className='w-full flex justify-center'>
-                <input type="text" placeholder="name" className="input input-bordered w-full " />
+                <input type="text" placeholder="Username" className="input input-bordered w-full focus:outline-none focus:border-slate-600" />
                </div>
 
                <div className='w-full flex '>
-                <input type="password" placeholder="Password" className="input input-bordered w-full " />
+                <input type="password" placeholder="Password" className="input input-bordered w-full focus:outline-none focus:border-slate-600 " />
                </div>
 
                <div className='w-full'>
@@ -31,7 +32,7 @@ const LoginPage = () => {
                </div>
              </div>
 
-             <Link href={'/dashboard'} className='w-full'>
+             <Link href={'/admin'} className='w-full'>
                 <button className='btn hover:bg-slate-900 hover:text-slate-50 w-full'>login</button>
              </Link>
         </form>

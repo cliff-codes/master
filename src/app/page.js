@@ -4,7 +4,7 @@ import {redirect} from 'next/navigation'
 
 export default function Home() {
   useEffect(() => {
-    redirect('/dashboard/admin')
+    redirect('/login')
   },[])
   return (
     <main>
