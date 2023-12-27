@@ -6,7 +6,7 @@ import RequisitionsTable from '../ui/admin/RequisitionsTable'
 
 const page = () => {
   return (
-    <div className='flex-1 w-full px-3 h-full overflow-y-scroll '>
+    <div className='flex-1 w-full px-3 h-full mb-7'>
         <div className='mt-5'>
             <h1 className='text-md xs:text-lg sm:text-xl '>Overview</h1>
             <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-2 mt-2'>

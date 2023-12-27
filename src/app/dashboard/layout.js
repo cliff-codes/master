@@ -1,5 +1,5 @@
 
-import MobileNav from "../ui/mobileNav/MobileNav"
+import MobileNav from "../ui/mobileNavs/MobileNav"
 
 export default function DashboardLayout({ children }) {
     return (
