@@ -42,7 +42,6 @@ const UsersLists = () => {
                 </th>
                 <th>Name</th>
                 <th>Role</th>
-                <th className='hidden sm:block'>Favorite Color</th>
                 <th></th>
             </tr>
             </thead>

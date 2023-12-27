@@ -2,15 +2,14 @@ import React from 'react'
 import {format} from 'date-fns'
 import ReportCard from '../../ui/analyticsAndReports/cards/ReportCard'
 import ReportTable from '../../ui/analyticsAndReports/table/ReportTable'
-import { IoIosArrowDown } from "react-icons/io";
-import { IoMdSearch } from 'react-icons/io';
+
 
 
 const AnalyticsPage = () => {
   const timestamp = Date.now();
   const formattedDate = format(new Date(timestamp), 'MM/dd/yy');
   return (
-    <div className='mx-2'>
+    <div className='px-3'>
       <div className='w-full grid grid-cols-2 sm:grid-cols-3 gap-3 mt-4 mb-8'>
         <div className='w-full'>
           <ReportCard title = {'Total Reports'} value={22} />

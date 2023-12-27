@@ -1,6 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
-import {MdModeEditOutline} from 'react-icons/md'
+import {MdModeEditOutline, MdDelete} from 'react-icons/md'
+
+
 
 const UserListRow = ({isChecked, handleCheckBoxChange, index}) => {
   return (
@@ -25,14 +27,15 @@ const UserListRow = ({isChecked, handleCheckBoxChange, index}) => {
                 </div>
                 </td>
                 <td className='text-xs sm:text-base'>
-                developer
-                <br/>
+                    developer
                 </td>
-                <td className='hidden sm:block'>Purple</td>
                 <th>
-                <button className="btn btn-ghost text-sm btn-xs">
-                    <MdModeEditOutline/>
-                </button>
+                    <button className="btn btn-ghost text-sm btn-xs sm:btn-sm sm:text-lg">
+                        <MdModeEditOutline/>
+                    </button>
+                    <button className='btn btn-ghost text-sm btn-xs sm:btn-sm sm:text-lg'>
+                        <MdDelete/>
+                    </button>
                 </th>
             </tr>
   )

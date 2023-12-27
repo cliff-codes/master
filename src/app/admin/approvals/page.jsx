@@ -30,7 +30,7 @@ const ApprovalsPage = () => {
   };
 
   return (
-    <div className='flex-1 flex flex-col justify-center mt-3 w-full'>
+    <div className='flex-1 flex flex-col justify-center mt-3 w-full px-4'>
     
         <div className="pt-14">
           <div className='w-full flex justify-between mb-2 place-items-center'>
