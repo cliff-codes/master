@@ -1,4 +1,5 @@
 
+import Link from 'next/link'
 import React from 'react'
 import { MdDelete, MdEdit  } from 'react-icons/md'
 
@@ -11,13 +12,32 @@ const RequestDetailsPage = () => {
             <h1 className='font-medium text-xl'>Request Details</h1>
 
             <div className='flex gap-2'>
-              <button className='btn btn-sm'>
-                <MdEdit size={24}/>
-              </button>
+              <Link href={'/budget-owner/requests/{reqId}/edit'}>
+                <button className='btn btn-sm'>
+                  <MdEdit size={24}/>
+                </button>
+              </Link>
 
-              <button className='btn btn-sm btn-error'>
-                <MdDelete size={24} className='text-red-700'/>
-              </button>
+              
+
+              {/* The button to open modal */}
+              <label htmlFor="my_modal_6" className="btn btn-sm btn-error">
+                  <MdDelete size={24} className='text-red-700'/>
+              </label>
+
+              {/* Put this part before </body> tag */}
+              <input type="checkbox" id="my_modal_6" className="modal-toggle" />
+              <div className="modal" role="dialog">
+                <div className="modal-box">
+                  <h3 className="font-bold text-lg">Hello!</h3>
+                  <p className="py-4">Are you sure you want to delete this request?</p>
+                  <div className="modal-action">
+                    <label htmlFor="my_modal_6" className="btn btn-error">Yes</label>
+                    <label htmlFor="my_modal_6" className="btn">Cancel</label>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
 

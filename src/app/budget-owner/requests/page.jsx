@@ -24,7 +24,7 @@ const RequetsPage = () => {
                     <td>Cy Ganderton</td>
                     <td>Quality Control Specialist</td>
                     <td>
-                       <Link href={'budget-owner/request-details'}> 
+                       <Link href={'/budget-owner/requests/{1234}'}> 
                         <button className='btn btn-sm btn-success text-slate-50'>view</button>
                        </Link>
                     </td>
@@ -35,7 +35,7 @@ const RequetsPage = () => {
                     <td>Hart Hagerty</td>
                     <td>Desktop Support Technician</td>
                     <td>
-                        <Link href={'budget-owner/request-details'}> 
+                        <Link href={'/budget-owner/requests/{1234}'}> 
                         <button className='btn btn-sm btn-success text-slate-50'>view</button>
                        </Link>
                     </td>
@@ -46,7 +46,7 @@ const RequetsPage = () => {
                     <td>Brice Swyre</td>
                     <td>Tax Accountant</td>
                     <td>
-                        <Link href={'budget-owner/request-details'}> 
+                        <Link href={'/budget-owner/requests/{1234}'}> 
                         <button className='btn btn-sm btn-success text-slate-50'>view</button>
                        </Link>
                     </td>
