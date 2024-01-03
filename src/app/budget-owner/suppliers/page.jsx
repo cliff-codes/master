@@ -7,7 +7,7 @@ const SuppliersPage = () => {
         <h1 className='font-medium'>Suppliers Lists</h1>
 
         <div className='w-full flex justify-end'>
-            <button className='btn btn-sm'>Add Supplier</button>
+            <Link href={'/budget-owner/suppliers/addSupplier'}><button className='btn btn-sm'>Add Supplier</button></Link>
         </div>
         <div className="overflow-x-auto mt-2">
             <table className="table hover ">
