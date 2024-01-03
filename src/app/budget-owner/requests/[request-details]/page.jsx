@@ -1,6 +1,6 @@
-'use client'
-import React, {useState} from 'react'
-import { MdDelete, MdEdit, MdUpload  } from 'react-icons/md'
+
+import React from 'react'
+import { MdDelete, MdEdit  } from 'react-icons/md'
 
 const RequestDetailsPage = () => {
   
