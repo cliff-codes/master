@@ -4,7 +4,7 @@ import React from 'react'
 const RequetsPage = () => {
   return (
     <div className='px-4 mt-3'>
-        <h1 className='font-medium '>Incoming Requests</h1>
+        <h1 className='font-medium text-xl'>Requests</h1>
 
         <div className="overflow-x-auto">
             <table className="table mt-2">

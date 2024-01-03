@@ -29,7 +29,7 @@ const SuppliersPage = () => {
                     <td>vision@gmail.com</td>
                     <td>Kumasi</td>
                     <td>
-                        <Link href={'/'}>
+                        <Link href={'/budget-owner/suppliers/{id}'}>
                             <button className='btn btn-sm btn-success text-slate-50'>view</button>
                         </Link>
                     </td>
@@ -41,7 +41,7 @@ const SuppliersPage = () => {
                     <td>gm@gmail.com</td>
                     <td>Germany</td>
                     <td>
-                        <Link href={'/'}>
+                        <Link href={'/budget-owner/suppliers/{id}'}>
                             <button className='btn btn-sm btn-success text-slate-50'>view</button>
                         </Link>
                     </td>
@@ -53,7 +53,7 @@ const SuppliersPage = () => {
                     <td>jwise@gmail.com</td>
                     <td>Accra</td>
                     <td>
-                        <Link href={'/add-supplier'}>
+                        <Link href={'/budget-owner/suppliers/{id}'}>
                             <button className='btn btn-sm btn-success text-slate-50'>view</button>
                         </Link>
                     </td>
