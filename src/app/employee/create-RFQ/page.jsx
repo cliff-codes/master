@@ -1,5 +1,5 @@
 import React from 'react'
-import RfqItemsTableRow from '../../ui/tables/RfqItemsTableRow'
+import ReqItemsTableRow from '../../ui/tables/ReqItemsTableRow'
 
 const CreateRFQPage = () => {
   return (
@@ -95,11 +95,11 @@ const CreateRFQPage = () => {
                     </thead>
                     <tbody>
                     {/* row 1 */}
-                        <RfqItemsTableRow/>
-                        <RfqItemsTableRow/>
-                        <RfqItemsTableRow/>
-                        <RfqItemsTableRow/>
-                        <RfqItemsTableRow/>
+                        <ReqItemsTableRow/>
+                        <ReqItemsTableRow/>
+                        <ReqItemsTableRow/>
+                        <ReqItemsTableRow/>
+                        <ReqItemsTableRow/>
                     </tbody>
                 </table>
             </div>
