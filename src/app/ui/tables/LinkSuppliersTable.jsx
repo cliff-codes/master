@@ -30,9 +30,6 @@ const LinkSuppliersTable = () => {
 
   return (
     <div>
-        {   
-            checkboxes.includes(true) ? <button className='btn btn-success text-slate-50 w-full my-4'>Send quotes to selected suppliers</button> : null
-        }
         <div className="overflow-x-auto">
             <table className="table border">
             {/* head */}
@@ -60,6 +57,9 @@ const LinkSuppliersTable = () => {
 
             </table>
         </div>
+        {   
+            checkboxes.includes(true) ? <button className='btn btn-success text-slate-50 w-full my-4'>Send quotes to selected suppliers</button> : null
+        }
     </div>
   )
 }

@@ -1,11 +1,11 @@
 
-import MobileNav from "../ui/mobileNavs/MobileNav"
+import EmployeeMoblieNav from "../ui/mobileNavs/EmployeeMoblieNav"
 
 export default function EmployeePageLayout({ children }) {
     return (
         <div className="w-full  overflow-y-auto  flex flex-col mb-8">
             <div>
-                <MobileNav/>
+                <EmployeeMoblieNav/>
             </div>
             {/* <SideNav/> */}
             <div className="mx-2">

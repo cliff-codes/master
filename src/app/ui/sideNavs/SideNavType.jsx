@@ -4,6 +4,7 @@ import React from 'react'
 import { usePathname } from 'next/navigation'
 import ProcurementSideNav from './ProcurementSideNav'
 import AdminSideNav from './AdminSideNav'
+import BudgetOwnerSideNav from './BudgetOwnerSideNav'
 
 
 const SideNavType = () => {
@@ -14,7 +15,8 @@ const SideNavType = () => {
         {
             pathname.includes('admin') ? <AdminSideNav/> :
                 pathname.includes('login') ? null
-            : <ProcurementSideNav/>
+            : pathname.includes('employee') ? <ProcurementSideNav/> :
+            <BudgetOwnerSideNav/>
         }
     </>
   )

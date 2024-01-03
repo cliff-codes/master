@@ -2,14 +2,15 @@
 import React, {useState} from 'react'
 import SideNavLink from '../dashbaord/SideNavLink'
 import {MdAdminPanelSettings, MdAccountBalance} from 'react-icons/md'
-import {FaUserCheck} from 'react-icons/fa'
+import {FaUserCheck, FaLuggageCart} from 'react-icons/fa'
+import { FaPeopleCarryBox } from "react-icons/fa6";
 import { TiHome } from "react-icons/ti";
-import {TbShoppingCartCog} from "react-icons/tb"
+import { TbDiscountCheckFilled} from "react-icons/tb"
 import { DiGoogleAnalytics } from "react-icons/di";
 import { RiUserSettingsFill } from "react-icons/ri";
-import { FaMoneyCheckAlt } from 'react-icons/fa';
-import { IoIosArrowDown } from "react-icons/io";
+import {MdOutlineLogout} from 'react-icons/md'
 import Link from 'next/link'
+
 
 
 const ProcurementSideNav = () => {
@@ -32,25 +33,14 @@ const ProcurementSideNav = () => {
           isAdmin ? <div  className='w-full flex flex-col gap-4 '>
             {/* side navigation for admin Dashboard */}
             <SideNavLink route={'/employee'} icon={<TiHome size={24}/>} name={"Home"} />
+
+            <SideNavLink route={'/employee/approvals'} icon={<TbDiscountCheckFilled size={24}/>} name={"Approvals"} />
+
+            <SideNavLink route={'/employee/orders'} icon={<FaLuggageCart size={24}/>} name={"Orders"} />
+
+            <SideNavLink route={'/employee/suppliers'} icon={<FaPeopleCarryBox size={24}/>} name={"Suppliers"} />
            
-           
-            <details close className='text-slate-400'>
-              <summary className='hover:bg-slate-600 hover:text-slate-50 py-3 flex place-items-center pl-2 gap-2'> <span><TbShoppingCartCog size={24}/></span> Procurements <span><IoIosArrowDown  className='relative left-3'/></span></summary>
-              <ul className='pl-3 w-full'>  
-                <li  className='hover:bg-slate-600 hover:text-slate-50 py-3 pl-2 rounded-md w-full'><Link href={'/employee/create-RFQ'} >Create request for quotation</Link></li>
-                <li  className='hover:bg-slate-600 hover:text-slate-50 pl-2 py-3 rounded-md'><Link href={'/employee/rfqs'}>Process RFQ</Link></li>
-              </ul>
-            </details>
-           
-            <details close className='text-slate-400'>
-              <summary className='hover:bg-slate-600 hover:text-slate-50 py-3 flex place-items-center pl-2 gap-2'> <span><FaMoneyCheckAlt size={24}/></span> Accounts Payable <IoIosArrowDown  className='relative left-3'/></summary>
-              <ul className=''> 
-                <li  className='hover:bg-slate-600 hover:text-slate-50 py-3 pl-3 rounded-md'><Link href={'/create-rfq'}>Create request for quotation</Link></li>
-                <li   className='hover:bg-slate-600 hover:text-slate-50 py-3 pl-3 rounded-md'><Link href={'/create-rfq'}>Process RFQ</Link></li>
-              </ul>
-            </details>
-           
-            <SideNavLink route={'/'} icon={<MdAccountBalance size={24}/>} name={"Budget Maintenance "} />
+            <SideNavLink route={'/login'} icon={<MdOutlineLogout size={24}/>} name={"Logout"} />
           </div> : <div className='w-full flex flex-col gap-4 '>
             {/* side navigation links for Staff Client*/} 
             <SideNavLink name={'Dashboard'} route = {'/dashboard'} icon={<TiHome size={24} className='xss:text-xs' />}/>

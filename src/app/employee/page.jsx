@@ -1,6 +1,8 @@
 import React from 'react'
 import { format } from 'date-fns';
 import OverviewCard from '../ui/cards/OverviewCard';
+import ChartTest from '../ui/dashbaord/charts/ChartTest'
+import DashBarChart from '../ui/dashbaord/charts/DashBarChart'
 
 const Employee = () => {
     const myDate = new Date();
@@ -8,7 +10,7 @@ const Employee = () => {
   
   return (
     <div className='w-full'>
-        <div className='mt-5 px-6 flex justify-between '>
+        <div className='mt-5 px-6 flex justify-between font-medium sm:text-xl'>
             <h1>Overview</h1>
             {/* date*/}
             <div>{formattedDate}</div>
@@ -19,6 +21,11 @@ const Employee = () => {
             <OverviewCard name={"Purchase order"} count={5}/>
             <OverviewCard name={"Invoice(s)"} count={5}/>
         </div>
+
+        <div className='w-full h-72 mt-10'>
+          <ChartTest/>
+        </div>
+        
     </div>
   )
 }

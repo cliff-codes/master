@@ -1,11 +1,11 @@
 import React from 'react'
 import {FaSearch} from 'react-icons/fa'
-import RfqProcessItemTableRow from '../../ui/tables/RfqProcessItemTableRow'
+import ReqProcessItemTableRow from '../../ui/tables/ReqProcessItemTableRow'
 
 function RfqPage() {
   return (
     <div className='mt-4 px-4'>
-        <h1 className='font-semibold'>Process Requests for Quotation</h1>
+        <h1 className='font-semibold'>Process Requisitions</h1>
 
         <div className='w-full relative mt-4'>
             <input type="text" placeholder="search..." className="input w-full s max-w-xs bg-slate-200 focus:outline-none focus:border-slate-600 pl-8" />
@@ -17,20 +17,20 @@ function RfqPage() {
             {/* head */}
             <thead>
               <tr className='bg-slate-800 text-slate-50'>
-                <th>RFQ Number</th>
-                <th>RFQ Date Created</th>
-                <th>RFQ Expiry Date</th> 
+                <th>REQ Number</th>
+                <th>REQ Date Created</th>
+                <th>REQ Expiry Date</th> 
                 <th>Details</th>
               </tr>
             </thead>
             <tbody>
               {/* row 1 */}
-              <RfqProcessItemTableRow/>
-              <RfqProcessItemTableRow/>
-              <RfqProcessItemTableRow/>
-              <RfqProcessItemTableRow/>
-              <RfqProcessItemTableRow/>
-              <RfqProcessItemTableRow/>
+              <ReqProcessItemTableRow/>
+              <ReqProcessItemTableRow/>
+              <ReqProcessItemTableRow/>
+              <ReqProcessItemTableRow/>
+              <ReqProcessItemTableRow/>
+              <ReqProcessItemTableRow/>
             </tbody>
           </table>
         </div>

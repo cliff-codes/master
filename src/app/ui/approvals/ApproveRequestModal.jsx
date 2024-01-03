@@ -1,7 +1,13 @@
+'use client'
 import React from 'react'
 import { FaFileArchive } from "react-icons/fa";
+import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 
 const ApproveRequestModal = () => {
+    const pathname = usePathname()
+    console.log(pathname)
+    
   return (
     <div className=''>
         <h1 className='font-light text-lg'>Request Details</h1>
@@ -31,7 +37,9 @@ const ApproveRequestModal = () => {
         </div>
 
         <div className='w-full flex flex-col gap-3 mt-8'>
-            <button className='btn btn-success rounded-3xl text-white w-full ' >approve request</button>
+            <Link href={
+                pathname.includes("approvals") ? "/employee/orders" : null
+            } ><button className='btn btn-success rounded-3xl text-white w-full ' >approve request</button></Link>
             <button className='btn btn-error rounded-3xl text-white w-full' >decline request</button>
         </div>
     </div>

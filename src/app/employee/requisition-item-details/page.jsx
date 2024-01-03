@@ -1,5 +1,5 @@
 import React from 'react'
-import RfqItemDetailsRow from '../../ui/tables/RfqItemDetailsRow'
+import RfqItemDetailsRow from '../../ui/tables/RequisitionItemDetailsRow'
 import Link from 'next/link'
 
 const RfqDetailsAndLinkingPage = () => {
@@ -10,10 +10,10 @@ const RfqDetailsAndLinkingPage = () => {
             {/* head */}
             <thead>
               <tr className='bg-slate-700 text-slate-50'>
-                <th>RFQ Number</th>
-                <th>RFQ Item Id</th>
-                <th>RFQ Item Description</th>
-                <th>RFQ Items Qty</th>
+                <th>REQ Number</th>
+                <th>REQ Item Id</th>
+                <th>REQ Item Description</th>
+                <th>REQ Items Qty</th>
               </tr>
             </thead>
             <tbody>
@@ -25,7 +25,7 @@ const RfqDetailsAndLinkingPage = () => {
           </table>
 
           <div className=' mt-6 w-full'>
-            <Link href={'/employee/link-quote-to-service'}>
+            <Link href={'/employee/link-requisition-to-service'}>
               <button className='btn btn-success text-slate-50 w-full'>Link to potential suppliers</button>
             </Link>
 
