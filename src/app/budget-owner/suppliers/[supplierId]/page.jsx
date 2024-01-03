@@ -3,11 +3,16 @@ import React from 'react'
 const SupplierDetailsPage = () => {
   return (
     <div className='mx-4 pt-4 flex flex-col gap-6'>
-        <div>
-            <h1 className='text-xl font-medium'>Company Name: <span>Vision Studios</span></h1>
-            <h1>Contact Email: <span>visionstudios@gmail.com</span></h1>
-            <h1>Location: <span>Kumasi, Ghana</span></h1>
-            <h1>Website: <span>www.visionstudios.com</span></h1>
+        <div className='flex justify-between'>
+            <div>
+                <h1 className='text-xl font-medium'>Company Name: <span>Vision Studios</span></h1>
+                <h1>Contact Email: <span>visionstudios@gmail.com</span></h1>
+                <h1>Location: <span>Kumasi, Ghana</span></h1>
+                <h1>Website: <span>www.visionstudios.com</span></h1>
+            </div>
+            <div>
+                <button className='btn btn-success text-slate-50'>visit website</button>
+            </div>
         </div>
         
         <div className='mt-3'>
