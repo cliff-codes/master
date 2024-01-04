@@ -26,7 +26,7 @@ const OrdersPage = () => {
                     <td>Quality Control Specialist</td>
                     <td>123</td>
                     <td>
-                        <Link href={'/employee/link-requisition-to-service'}>
+                        <Link href={'/procurement-officer/link-requisition-to-service'}>
                             <button className='btn btn-success btn-sm text-slate-50'>view</button>
                         </Link>
                     </td>
@@ -38,7 +38,7 @@ const OrdersPage = () => {
                     <td>Desktop Support Technician</td>
                     <td>34</td>
                     <td>
-                        <Link href={'/employee/link-requisition-to-service'}>
+                        <Link href={'/procurement-officer/link-requisition-to-service'}>
                             <button className='btn btn-success btn-sm text-slate-50'>view</button>
                         </Link>
                     </td>
@@ -50,7 +50,7 @@ const OrdersPage = () => {
                     <td>Tax Accountant</td>
                     <td>1254</td>
                     <td>
-                        <Link href={'/employee/link-requisition-to-service'}>
+                        <Link href={'/procurement-officer/link-requisition-to-service'}>
                             <button className='btn btn-success btn-sm text-slate-50'>view</button>
                         </Link>
                     </td>

@@ -20,19 +20,17 @@ const TableRow = ({isChecked, handleCheckBoxChange, index}) => {
               <td>
                 <div className="flex items-center gap-3">
                   <div className="hidden sm:block avatar transition-all 100 ease-linear">
-                    <div className="mask mask-squircle w-12 h-12 hidden">
-                      <img src="/pic.jpg" alt="Avatar Tailwind CSS Component" />
-                    </div>
+                    
                   </div>
                   <div>
-                    <div className="text-xs font-bold sm:text-base">Hart Hagerty</div>
+                    <div className="text-xs sm:text-base">Hart Hagerty</div>
                   </div>
                 </div>
               </td>
-              <td className='text-xs sm:text-base hidden sm:block'>
+              <td className='text-xs sm:text-base '>
                 10/12/2023
               </td>
-              <td className='font-medium text-xs'>
+              <td className='text-xs sm:text-base'>
                 1200.00
               </td>
               <td>

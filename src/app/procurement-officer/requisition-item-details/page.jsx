@@ -25,11 +25,11 @@ const RfqDetailsAndLinkingPage = () => {
           </table>
 
           <div className=' mt-6 w-full'>
-            <Link href={'/employee/link-requisition-to-service'}>
+            <Link href={'/procurement-officer/link-requisition-to-service'}>
               <button className='btn btn-success text-slate-50 w-full'>Link to potential suppliers</button>
             </Link>
 
-            <Link href={'/employee/rfqs'}>
+            <Link href={'/procurement-officer/rfqs'}>
               <button className='btn btn-ghost w-full mt-2'>{"Back to RFQ's"}</button>
             </Link>
           </div>

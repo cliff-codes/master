@@ -32,13 +32,13 @@ const ProcurementSideNav = () => {
         {
           isAdmin ? <div  className='w-full flex flex-col gap-4 '>
             {/* side navigation for admin Dashboard */}
-            <SideNavLink route={'/employee'} icon={<TiHome size={24}/>} name={"Home"} />
+            <SideNavLink route={'/procurement-officer'} icon={<TiHome size={24}/>} name={"Home"} />
 
-            <SideNavLink route={'/employee/approvals'} icon={<TbDiscountCheckFilled size={24}/>} name={"Approvals"} />
+            <SideNavLink route={'/procurement-officer/approvals'} icon={<TbDiscountCheckFilled size={24}/>} name={"Approvals"} />
 
-            <SideNavLink route={'/employee/orders'} icon={<FaLuggageCart size={24}/>} name={"Orders"} />
+            <SideNavLink route={'/procurement-officer/orders'} icon={<FaLuggageCart size={24}/>} name={"Orders"} />
 
-            <SideNavLink route={'/employee/suppliers'} icon={<FaPeopleCarryBox size={24}/>} name={"Suppliers"} />
+            <SideNavLink route={'/procurement-officer/suppliers'} icon={<FaPeopleCarryBox size={24}/>} name={"Suppliers"} />
            
             <SideNavLink route={'/login'} icon={<MdOutlineLogout size={24}/>} name={"Logout"} />
           </div> : <div className='w-full flex flex-col gap-4 '>

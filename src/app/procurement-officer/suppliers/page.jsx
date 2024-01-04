@@ -7,7 +7,8 @@ const SuppliersPage = () => {
         <h1 className='font-medium'>Suppliers Lists</h1>
 
         <div className='w-full flex justify-end'>
-            <button className='btn btn-sm'>Add Supplier</button>
+            <Link href={'/procurement-officer/suppliers/add-supplier'}>
+                <button className='btn btn-sm'>Add Supplier</button></Link>
         </div>
         <div className="overflow-x-auto mt-2">
             <table className="table hover ">
@@ -29,7 +30,7 @@ const SuppliersPage = () => {
                     <td>vision@gmail.com</td>
                     <td>Kumasi</td>
                     <td>
-                        <Link href={'/'}>
+                        <Link href={'/procurement-officer/suppliers/{supplierId}'}>
                             <button className='btn btn-sm btn-success text-slate-50'>view</button>
                         </Link>
                     </td>
@@ -41,7 +42,7 @@ const SuppliersPage = () => {
                     <td>gm@gmail.com</td>
                     <td>Germany</td>
                     <td>
-                        <Link href={'/'}>
+                        <Link href={'/procurement-officer/suppliers/{supplierId}'}>
                             <button className='btn btn-sm btn-success text-slate-50'>view</button>
                         </Link>
                     </td>
@@ -53,7 +54,7 @@ const SuppliersPage = () => {
                     <td>jwise@gmail.com</td>
                     <td>Accra</td>
                     <td>
-                        <Link href={'/add-supplier'}>
+                        <Link href={'/procurement-officer/suppliers/{supplierId}'}>
                             <button className='btn btn-sm btn-success text-slate-50'>view</button>
                         </Link>
                     </td>

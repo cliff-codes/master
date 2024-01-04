@@ -25,7 +25,7 @@ const RequestDetailsPage = () => {
                   <MdDelete size={24} className='text-red-700'/>
               </label>
 
-              {/* Put this part before </body> tag */}
+              {/* Portal to confirm delete action */}
               <input type="checkbox" id="my_modal_6" className="modal-toggle" />
               <div className="modal" role="dialog">
                 <div className="modal-box">
@@ -37,7 +37,7 @@ const RequestDetailsPage = () => {
                   </div>
                 </div>
               </div>
-
+              {/*portal to confirm delete action ends here*/}
             </div>
           </div>
 

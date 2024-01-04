@@ -57,16 +57,16 @@ const MobileNav = () => {
       <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label> 
       <ul className=" menu p-4 w-80 min-h-full bg-slate-800">
         <li onClick={closeDrawer}>
-          <SideNavLink route={'/employee'} icon={<TiHome size={24}/>} name={"Home"} />
+          <SideNavLink route={'/procurement-officer'} icon={<TiHome size={24}/>} name={"Home"} />
         </li>
         <li onClick={closeDrawer}>
-          <SideNavLink route={'/employee/approvals'} icon={<TbDiscountCheckFilled size={24}/>} name={"Approvals"} />
+          <SideNavLink route={'/procurement-officer/approvals'} icon={<TbDiscountCheckFilled size={24}/>} name={"Approvals"} />
         </li>
         <li onClick={closeDrawer}>
-          <SideNavLink route={'/employee/orders'} icon={<FaLuggageCart size={24}/>} name={"Orders"} />
+          <SideNavLink route={'/procurement-officer/orders'} icon={<FaLuggageCart size={24}/>} name={"Orders"} />
         </li>
         <li onClick={closeDrawer}>
-          <SideNavLink route={'/employee/suppliers'} icon={<FaPeopleCarryBox size={24}/>} name={"Suppliers"} />
+          <SideNavLink route={'/procurement-officer/suppliers'} icon={<FaPeopleCarryBox size={24}/>} name={"Suppliers"} />
         </li>
         <li onClick={closeDrawer}>
           <SideNavLink route={'/login'} icon={<MdOutlineLogout size={24}/>} name={"Logout"} />
