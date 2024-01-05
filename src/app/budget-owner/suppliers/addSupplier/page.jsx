@@ -41,7 +41,7 @@ const AddSupplierPage = () => {
                         <span className="label-text font-medium">Password</span>
                     </div>
                     <input type="text" placeholder="Type here" className="input focus:outline-none w-full max-w-lg bg-slate-100" />
-                </label>
+                </label> bn
 
                 <label className="form-control w-full max-w-lg">
                     <div className="label">

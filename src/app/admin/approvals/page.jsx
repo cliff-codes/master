@@ -30,7 +30,7 @@ const ApprovalsPage = () => {
   };
 
   return (
-    <div className='flex-1 flex flex-col justify-center mt-3 w-full px-4'>
+    <div className='flex-1 flex flex-col px-4'>
     
         <div className="pt-14">
           <div className='w-full flex justify-between mb-2 place-items-center'>
@@ -48,31 +48,35 @@ const ApprovalsPage = () => {
             </div> : null
             }
           </div>
-          <table className="table border max-full sm:max-w-full">
-          {/* head */}
-          <thead>
-            <tr className=''>
-              <th>
-                <label>
-                  <input type="checkbox" className="checkbox" checked = {checkAll} onChange={handleCheckAll} />
-                </label>
-              </th>
-              <th>Name</th>
-              <th className='hidden sm:block'>Date</th>
-              <th>Budget</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody className=' pb-3 '>
-            {/* row 1 */}
-            {
-              checkboxes.map((isChecked, index) => (
-                <TableRow key={index} isChecked = {isChecked} handleCheckBoxChange = {handleCheckboxChange} index={index}/>
-              ))
-            }
-          </tbody>
-          {/* foot */}
-          </table>
+          
+          <div className="overflow-x-auto bg-slate-50 rounded-sm">
+            <table className="table border">
+            {/* head */}
+            <thead>
+              <tr className=''>
+                <th>
+                  <label>
+                    <input type="checkbox" className="checkbox" checked = {checkAll} onChange={handleCheckAll} />
+                  </label>
+                </th>
+                <th>Name</th>
+                <th className='hidden sm:block'>Date</th>
+                <th>Budget</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody className=' pb-3 '>
+              {/* table rows */}
+              {
+                checkboxes.map((isChecked, index) => (
+                  <TableRow key={index} isChecked = {isChecked} handleCheckBoxChange = {handleCheckboxChange} index={index}/>
+                ))
+              }
+            </tbody>
+            {/* foot */}
+            </table>
+          </div>
+          {/* overflow-x-auto bg-slate-50 rounded-sm */}
         </div>
     </div> 
   )
