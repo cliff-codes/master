@@ -9,8 +9,8 @@ const Employee = () => {
     const formattedDate = format(myDate, 'yyyy-MM-dd');
   
   return (
-    <div className='w-full'>
-        <div className='mt-5 px-6 flex justify-between font-medium sm:text-xl'>
+    <div className='w-full px-3'>
+        <div className='mt-5  flex justify-between font-medium sm:text-xl'>
             <h1>Overview</h1>
             {/* date*/}
             <div>{formattedDate}</div>
@@ -21,9 +21,11 @@ const Employee = () => {
             <OverviewCard name={"Purchase order"} count={5}/>
             <OverviewCard name={"Invoice(s)"} count={5}/>
         </div>
-
-        <div className='w-full h-72 mt-10'>
-          <ChartTest/>
+        <div className='w-full mt-10'>
+          <h1 className='font-medium mb-2'>Payment Monitoring</h1>
+          <div className='w-full h-72 '>
+            <ChartTest/>
+          </div>
         </div>
         
     </div>

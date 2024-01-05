@@ -30,12 +30,12 @@ const ApprovalsPage = () => {
   };
 
   return (
-    <div className='flex-1 flex flex-col justify-center mt-3 w-full px-4'>
+    <div className='flex-1 flex flex-col justify-center mt-3 w-full px-3'>
     
-        <div className="pt-14">
+        <div className="pt-5">
           <div className='w-full flex justify-between mb-2 place-items-center'>
             <div className="dropdown dropdown-right">
-              <div tabIndex={0} role="button" className=" h-8 bg-slate-300 px-2 m-1 flex gap-1 hover:bg-slate-200 text-xs transition-all 100s ease-out place-items-center rounded-lg sm:text-base">sort by <span><TbArrowsSort size={16}/></span></div>
+              <div tabIndex={0} role="button" className="btn btn-sm">sort <span><TbArrowsSort size={16}/></span></div>
               <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
                 <li><a>Date</a></li>
                 <li><a>Status </a></li>
@@ -48,31 +48,34 @@ const ApprovalsPage = () => {
             </div> : null
             }
           </div>
-          <table className="table border max-full sm:max-w-full">
-          {/* head */}
-          <thead>
-            <tr className='bg-slate-700 text-slate-50'>
-              <th>
-                <label>
-                  <input type="checkbox" className="checkbox" checked = {checkAll} onChange={handleCheckAll} />
-                </label>
-              </th>
-              <th>Name</th>
-              <th className='hidden sm:block'>Date</th>
-              <th>Budget</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody className=' pb-3 '>
-            {/* row 1 */}
-            {
-              checkboxes.map((isChecked, index) => (
-                <TableRow key={index} isChecked = {isChecked} handleCheckBoxChange = {handleCheckboxChange} index={index}/>
-              ))
-            }
-          </tbody>
-          {/* foot */}
-          </table>
+
+          <div className='overflow-x-auto bg-slate-50 rounded-sm'>
+            <table className="table border ">
+            {/* head */}
+            <thead>
+              <tr className='bg-slate-700 text-slate-50'>
+                <th>
+                  <label>
+                    <input type="checkbox" className="checkbox" checked = {checkAll} onChange={handleCheckAll} />
+                  </label>
+                </th>
+                <th>Name</th>
+                <th className=''>Date</th>
+                <th>Budget</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody className=' pb-3 '>
+              {/* row 1 */}
+              {
+                checkboxes.map((isChecked, index) => (
+                  <TableRow key={index} isChecked = {isChecked} handleCheckBoxChange = {handleCheckboxChange} index={index}/>
+                ))
+              }
+            </tbody>
+            {/* foot */}
+            </table>
+          </div>
         </div>
     </div> 
   )
