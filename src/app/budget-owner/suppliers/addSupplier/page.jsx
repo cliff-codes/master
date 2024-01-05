@@ -12,42 +12,42 @@ const AddSupplierPage = () => {
                     <div className="label">
                         <span className="label-text font-medium">Company Name</span>
                     </div>
-                    <input type="text" placeholder="Type here" className="input focus:outline-none w-full max-w-lg bg-slate-100" />
+                    <input type="text" placeholder="name" className="input focus:outline-none w-full max-w-lg bg-slate-100" />
                 </label>
 
                 <label className="form-control w-full max-w-lg">
                     <div className="label">
                         <span className="label-text font-medium">Contact Email</span>
                     </div>
-                    <input type="text" placeholder="Type here" className="input focus:outline-none w-full max-w-lg bg-slate-100" />
+                    <input type="email" placeholder="email" className="input focus:outline-none w-full max-w-lg bg-slate-100" />
                 </label>
 
                 <label className="form-control w-full max-w-lg">
                     <div className="label">
                         <span className="label-text font-medium">Location</span>
                     </div>
-                    <input type="text" placeholder="Type here" className="input focus:outline-none w-full max-w-lg bg-slate-100" />
+                    <input type="text" placeholder="location" className="input focus:outline-none w-full max-w-lg bg-slate-100" />
                 </label>
 
                 <label className="form-control w-full max-w-lg">
                     <div className="label">
                         <span className="label-text font-medium">Service Type</span>
                     </div>
-                    <input type="text" placeholder="Type here" className="input focus:outline-none w-full max-w-lg bg-slate-100" />
+                    <input type="text" placeholder="service type" className="input focus:outline-none w-full max-w-lg bg-slate-100" />
                 </label>
 
                 <label className="form-control w-full max-w-lg">
                     <div className="label">
                         <span className="label-text font-medium">Password</span>
                     </div>
-                    <input type="text" placeholder="Type here" className="input focus:outline-none w-full max-w-lg bg-slate-100" />
-                </label> bn
+                    <input type="password" placeholder="password" className="input focus:outline-none w-full max-w-lg bg-slate-100" />
+                </label> 
 
                 <label className="form-control w-full max-w-lg">
                     <div className="label">
                         <span className="label-text font-medium">Repeat Password</span>
                     </div>
-                    <input type="text" placeholder="Type here" className="input focus:outline-none w-full max-w-lg bg-slate-100" />
+                    <input type="password" placeholder="re-type password" className="input focus:outline-none w-full max-w-lg bg-slate-100" />
                 </label>
 
                 <button className='btn btn-success w-full max-w-lg text-slate-50'>Add Supplier</button>

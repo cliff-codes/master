@@ -50,7 +50,7 @@ const RequestDetailsPage = () => {
           </div>
           
           <div>
-            <h1 className='uppercase'>Received Created</h1>
+            <h1 className='uppercase'>Created At</h1>
               
               <input type="text" disabled = {true} defaultValue = {'10/12/2024'} className="input w-full max-w-lg" />
           </div>
