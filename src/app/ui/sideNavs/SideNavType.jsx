@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation'
 import ProcurementSideNav from './ProcurementSideNav'
 import AdminSideNav from './AdminSideNav'
 import BudgetOwnerSideNav from './BudgetOwnerSideNav'
+import SuperAdminSideNav from './SuperAdminSideNav'
 
 
 const SideNavType = () => {
@@ -12,11 +13,12 @@ const SideNavType = () => {
     
   return (
     <>
-        {
-            pathname.includes('admin') ? <AdminSideNav/> :
-                pathname.includes('login') ? null
-            : pathname.includes('employee') ? <ProcurementSideNav/> :
-            <BudgetOwnerSideNav/>
+        { //
+            pathname.includes('super-admin') ? <SuperAdminSideNav/> 
+              :pathname.includes('admin') ? <AdminSideNav/>
+              :pathname.includes('login') ? null
+                : pathname.includes('employee') ? <ProcurementSideNav/> 
+                  :<BudgetOwnerSideNav/> 
         }
     </>
   )
