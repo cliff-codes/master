@@ -1,5 +1,5 @@
+'use client'
 import React from 'react'
-import SideNavLink from '../dashbaord/SideNavLink'
 import {IoMdAnalytics, IoMdNotifications} from 'react-icons/io'
 import { AiFillHome } from 'react-icons/ai'
 import { TbDiscountCheckFilled } from 'react-icons/tb'
@@ -7,6 +7,13 @@ import { FaUsersGear, FaPeopleCarryBox} from 'react-icons/fa6'
 import { FaLuggageCart } from 'react-icons/fa'
 import Link from 'next/link'
 
+
+function closeDrawer(){
+  const checkbox = document.getElementById("my-drawer-3")
+  if(checkbox){
+    checkbox.checked = false
+  }
+}
 
 const SuperAdminNav = () => {
   return (
@@ -38,7 +45,7 @@ const SuperAdminNav = () => {
       <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label> 
       <ul className=" menu p-4 w-80 min-h-full bg-slate-800 flex flex-col gap-3">
         {/* Sidebar content here */}
-        <li>
+        <li onClick={closeDrawer}>
             <div className='flex place-items-center text-slate-400 py-4 hover:bg-slate-600 hover:text-slate-50'>
               <AiFillHome size={24}/>
               <span>
@@ -57,9 +64,13 @@ const SuperAdminNav = () => {
               
             </summary>
             <ul>
-              <li className='hover:bg-slate-600 hover:text-slate-50 py-1 rounded-md'><a>Admin Approvals</a></li>
+              <Link onClick={closeDrawer} href='/super-admin/approvals/admin'>
+                <li className='hover:bg-slate-600 hover:text-slate-50 py-2 px-1 rounded-md'>Admin Approvals</li>
+              </Link>
 
-              <li className='hover:bg-slate-600 hover:text-slate-50 py-1 rounded-md'><a>Procurement Approvals</a></li>
+              <Link onClick={closeDrawer} href={'/super-admin/approvals/procurement-office'}>
+                <li className='hover:bg-slate-600 hover:text-slate-50 py-2 px-1 rounded-md'>Procurement Approvals</li>
+              </Link>
             </ul>
           </details>
         </li>
@@ -74,9 +85,13 @@ const SuperAdminNav = () => {
               
             </summary>
             <ul>
-              <li className='hover:bg-slate-600 hover:text-slate-50 py-1 rounded-md'><a>Budget-Owner Orders</a></li>
+              <Link onClick={closeDrawer} href={'/super-admin/orders/budget-owner'}>
+                <li className='hover:bg-slate-600 hover:text-slate-50 py-2 px-1   rounded-md'>Budget-Owner Orders</li>
+              </Link>
 
-              <li className='hover:bg-slate-600 hover:text-slate-50 py-1 rounded-md'><a>Procurement Orders</a></li>
+              <Link onClick={closeDrawer} href={'/super-admin/orders/procurement-office'}>
+                <li className='hover:bg-slate-600 hover:text-slate-50 py-2 px-1   rounded-md'>Procurement Orders</li>
+              </Link>
             </ul>
           </details>
         </li>
@@ -91,9 +106,13 @@ const SuperAdminNav = () => {
               
             </summary>
             <ul>
-              <li className='hover:bg-slate-600 hover:text-slate-50 py-1 rounded-md'><a>Budget-Owner Suppliers</a></li>
+              <Link onClick={closeDrawer} href={'/super-admin/suppliers/budget-owner'}>
+                  <li className='hover:bg-slate-600 hover:text-slate-50 py-2 px-1 rounded-md'>Budget-Owner Suppliers</li>
+              </Link>
 
-              <li className='hover:bg-slate-600 hover:text-slate-50 py-1 rounded-md'><a>Procurement Suppliers</a></li>
+              <Link onClick={closeDrawer} href={'/super-admin/suppliers/procurement-office'}>
+                <li className='hover:bg-slate-600 hover:text-slate-50 py-2 px-1 rounded-md'>Procurement Suppliers</li>
+              </Link>
             </ul>
           </details>
         </li>
@@ -102,7 +121,7 @@ const SuperAdminNav = () => {
             <div className='flex place-items-center text-slate-400 py-4 hover:bg-slate-600 hover:text-slate-50'>
               <IoMdAnalytics size={24}/>
               <span>
-                <Link href={'/admin/report-analytics'}>Report & Analytics</Link>
+                <Link onClick={closeDrawer} href={'/super-admin/report-and-analytics'}>Report & Analytics</Link>
               </span>
             </div>
         </li>
@@ -111,7 +130,7 @@ const SuperAdminNav = () => {
             <div className='flex place-items-center text-slate-400 py-4 hover:bg-slate-600 hover:text-slate-50'>
               <FaUsersGear size={24}/>
               <span>
-                <Link href={'/admin/user-management'}>User Management</Link>
+                <Link onClick={closeDrawer} href={'/super-admin/user-management'}>User Management</Link>
               </span>
             </div>
         </li>
