@@ -25,84 +25,96 @@ const SuperAdminSideNav = () => {
        
         {/* side navigation for admin Dashboard */}
         <ul className=" menu p-4 w-80 min-h-full bg-slate-800 flex flex-col gap-3">
-            {/* Sidebar content here */}
-            <li>
-                <div className='flex place-items-center text-slate-400 py-4 hover:bg-slate-600 hover:text-slate-50'>
-                <AiFillHome size={24}/>
-                <span>
-                    <Link href={'/admin'}>Home</Link>
-                </span>
-                </div>
-            </li>
-        
-            <li className='text-slate-400'>
-            <details close>
-                <summary className='hover:bg-slate-600 hover:text-slate-50'>
-                <div className='flex place-items-center py-2 gap-2'>
-                    <TbDiscountCheckFilled size={24}/>
-                    <span>Approvals</span>
-                </div>
-                
-                </summary>
-                <ul>
-                <li className='hover:bg-slate-600 hover:text-slate-50 py-1 rounded-md'><a>Admin Approvals</a></li>
+        {/* Sidebar content here */}
+        <li>
+            <div className='flex place-items-center text-slate-400 py-4 hover:bg-slate-600 hover:text-slate-50'>
+              <AiFillHome size={24}/>
+              <span>
+                <Link href={'/admin'}>Home</Link>
+              </span>
+            </div>
+        </li>
+       
+        <li className='text-slate-400'>
+          <details close>
+            <summary className='hover:bg-slate-600 hover:text-slate-50'>
+              <div className='flex place-items-center py-2 gap-2'>
+                <TbDiscountCheckFilled size={24}/>
+                <span>Approvals</span>
+              </div>
+              
+            </summary>
+            <ul>
+              <Link href='/super-admin/approvals/admin'>
+                <li className='hover:bg-slate-600 hover:text-slate-50 py-2 px-1 rounded-md'>Admin Approvals</li>
+              </Link>
 
-                <li className='hover:bg-slate-600 hover:text-slate-50 py-1 rounded-md'><a>Procurement Approvals</a></li>
-                </ul>
-            </details>
-            </li>
+              <Link href={'/super-admin/approvals/procurement-office'}>
+                <li className='hover:bg-slate-600 hover:text-slate-50 py-2 px-1 rounded-md'>Procurement Approvals</li>
+              </Link>
+            </ul>
+          </details>
+        </li>
 
-            <li className='text-slate-400'>
-            <details close>
-                <summary className='hover:bg-slate-600 hover:text-slate-50'>
-                <div className='flex place-items-center py-2 gap-2'>
-                    <FaLuggageCart size={24}/>
-                    <span>Orders</span>
-                </div>
-                
-                </summary>
-                <ul>
-                <li className='hover:bg-slate-600 hover:text-slate-50 py-1 rounded-md'><a>Budget-Owner Orders</a></li>
+        <li className='text-slate-400'>
+          <details close>
+            <summary className='hover:bg-slate-600 hover:text-slate-50'>
+              <div className='flex place-items-center py-2 gap-2'>
+                <FaLuggageCart size={24}/>
+                <span>Orders</span>
+              </div>
+              
+            </summary>
+            <ul>
+              <Link href={'/super-admin/orders/budget-owner'}>
+                <li className='hover:bg-slate-600 hover:text-slate-50 py-2 px-1   rounded-md'>Budget-Owner Orders</li>
+              </Link>
 
-                <li className='hover:bg-slate-600 hover:text-slate-50 py-1 rounded-md'><a>Procurement Orders</a></li>
-                </ul>
-            </details>
-            </li>
+              <Link href={'/super-admin/orders/procurement-office'}>
+                <li className='hover:bg-slate-600 hover:text-slate-50 py-2 px-1   rounded-md'>Procurement Orders</li>
+              </Link>
+            </ul>
+          </details>
+        </li>
 
-            <li className='text-slate-400'>
-            <details close>
-                <summary className='hover:bg-slate-600 hover:text-slate-50'>
-                <div className='flex place-items-center py-2 gap-2'>
-                    <FaPeopleCarryBox size={24}/>
-                    <span>Suppliers</span>
-                </div>
-                
-                </summary>
-                <ul>
-                <li className='hover:bg-slate-600 hover:text-slate-50 py-1 rounded-md'><a>Budget-Owner Suppliers</a></li>
+        <li className='text-slate-400'>
+          <details close>
+            <summary className='hover:bg-slate-600 hover:text-slate-50'>
+              <div className='flex place-items-center py-2 gap-2'>
+                <FaPeopleCarryBox size={24}/>
+                <span>Suppliers</span>
+              </div>
+              
+            </summary>
+            <ul>
+              <Link href={'/super-admin/suppliers/budget-owner'}>
+                  <li className='hover:bg-slate-600 hover:text-slate-50 py-2 px-1 rounded-md'>Budget-Owner Suppliers</li>
+              </Link>
 
-                <li className='hover:bg-slate-600 hover:text-slate-50 py-1 rounded-md'><a>Procurement Suppliers</a></li>
-                </ul>
-            </details>
-            </li>
+              <Link href={'/super-admin/suppliers/procurement-office'}>
+                <li className='hover:bg-slate-600 hover:text-slate-50 py-2 px-1 rounded-md'>Procurement Suppliers</li>
+              </Link>
+            </ul>
+          </details>
+        </li>
 
-            <li>
-                <div className='flex place-items-center text-slate-400 py-4 hover:bg-slate-600 hover:text-slate-50'>
-                <IoMdAnalytics size={24}/>
-                <span>
-                    <Link href={'/admin/report-analytics'}>Report & Analytics</Link>
-                </span>
-                </div>
-            </li>
+        <li>
+            <div className='flex place-items-center text-slate-400 py-4 hover:bg-slate-600 hover:text-slate-50'>
+              <IoMdAnalytics size={24}/>
+              <span>
+                <Link href={'/super-admin/report-and-analytics'}>Report & Analytics</Link>
+              </span>
+            </div>
+        </li>
 
-            <li>
-                <div className='flex place-items-center text-slate-400 py-4 hover:bg-slate-600 hover:text-slate-50'>
-                <FaUsersGear size={24}/>
-                <span>
-                    <Link href={'/admin/user-management'}>User Management</Link>
-                </span>
-                </div>
-            </li>
+        <li>
+            <div className='flex place-items-center text-slate-400 py-4 hover:bg-slate-600 hover:text-slate-50'>
+              <FaUsersGear size={24}/>
+              <span>
+                <Link href={'/super-admin/user-management'}>User Management</Link>
+              </span>
+            </div>
+        </li>
       </ul>
     </div> 
   )
