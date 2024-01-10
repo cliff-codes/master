@@ -13,7 +13,6 @@ import { GiFiles } from 'react-icons/gi'
 const SuperAdminSideNav = () => {
   return (
     <div className=' rounded-l-none rounded-r-lg  pt-3 px-1  rounded-br-none bg-slate-800 sticky top-0'>
-
         <div className='w-full text-slate-50'>
             <div className='w-full flex place-items-center'>
                 <MdAdminPanelSettings size={30} />
@@ -85,7 +84,6 @@ const SuperAdminSideNav = () => {
                 <FaPeopleCarryBox size={24}/>
                 <span>Suppliers</span>
               </div>
-              
             </summary>
             <ul>
               <Link href={'/super-admin/suppliers/budget-owner'}>
