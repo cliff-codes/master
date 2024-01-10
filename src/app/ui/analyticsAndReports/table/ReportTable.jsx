@@ -9,7 +9,7 @@ const ReportTable = () => {
       <table className="table border">
         {/* head */}
         <thead>
-          <tr>
+          <tr className='bg-slate-700 text-slate-50'>
             <th>
               <label>
                 <input type="checkbox" className="checkbox" />
