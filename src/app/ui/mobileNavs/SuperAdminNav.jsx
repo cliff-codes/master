@@ -6,6 +6,7 @@ import { TbDiscountCheckFilled } from 'react-icons/tb'
 import { FaUsersGear, FaPeopleCarryBox} from 'react-icons/fa6'
 import { FaLuggageCart } from 'react-icons/fa'
 import Link from 'next/link'
+import { GiFiles } from 'react-icons/gi'
 
 
 function closeDrawer(){
@@ -42,7 +43,7 @@ const SuperAdminNav = () => {
 
     </div> 
     <div className="drawer-side">
-      <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label> 
+      <label htmlFor="my-drawer-3" aria-label="close sidebar"  className="drawer-overlay"></label> 
       <ul className=" menu p-4 w-80 min-h-full bg-slate-800 flex flex-col gap-3">
         {/* Sidebar content here */}
         <li onClick={closeDrawer}>
@@ -116,6 +117,16 @@ const SuperAdminNav = () => {
             </ul>
           </details>
         </li>
+
+        <li>
+            <div className='flex place-items-center text-slate-400 py-4 hover:bg-slate-600 hover:text-slate-50'>
+              <GiFiles size={24}/>
+              <span>
+                <Link onClick={closeDrawer} href={'/super-admin/requests'}>Requests</Link>
+              </span>
+            </div>
+        </li>
+
 
         <li>
             <div className='flex place-items-center text-slate-400 py-4 hover:bg-slate-600 hover:text-slate-50'>
