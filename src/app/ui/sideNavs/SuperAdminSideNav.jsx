@@ -100,31 +100,37 @@ const SuperAdminSideNav = () => {
         </li>
 
         <li>
-            <div className='flex place-items-center text-slate-400 py-4 hover:bg-slate-600 hover:text-slate-50'>
-              <GiFiles size={24}/>
-              <span>
-                <Link href={'/super-admin/requests'}>Requests</Link>
-              </span>
-            </div>
+            <Link href={'/super-admin/requests'}>
+              <div className='flex place-items-center text-slate-400 py-4 hover:bg-slate-600 hover:text-slate-50'>
+                <GiFiles size={24}/>
+                <span>
+                  Requests
+                </span>
+              </div>
+            </Link>
         </li>
 
 
         <li>
-            <div className='flex place-items-center text-slate-400 py-4 hover:bg-slate-600 hover:text-slate-50'>
-              <IoMdAnalytics size={24}/>
-              <span>
-                <Link href={'/super-admin/report-and-analytics'}>Report & Analytics</Link>
-              </span>
-            </div>
+            <Link href={'/super-admin/report-and-analytics'}>
+              <div className='flex place-items-center text-slate-400 py-4 hover:bg-slate-600 hover:text-slate-50'>
+                <IoMdAnalytics size={24}/>
+                <span>
+                  <Link href={'/super-admin/report-and-analytics'}>Report & Analytics</Link>
+                </span>
+              </div>
+            </Link>
         </li>
 
         <li>
+            <Link href={'/super-admin/user-management'}>
             <div className='flex place-items-center text-slate-400 py-4 hover:bg-slate-600 hover:text-slate-50'>
               <FaUsersGear size={24}/>
               <span>
                 <Link href={'/super-admin/user-management'}>User Management</Link>
               </span>
             </div>
+            </Link>
         </li>
       </ul>
     </div> 

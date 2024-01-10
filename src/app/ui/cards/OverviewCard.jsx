@@ -11,5 +11,4 @@ const OverviewCard = ({count, name}) => {
    </Link>
   )
 }
-
 export default OverviewCard
