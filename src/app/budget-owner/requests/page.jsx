@@ -5,6 +5,11 @@ const RequetsPage = () => {
   return (
     <div className='px-4 mt-3'>
         <h1 className='font-medium text-lg sm:text-xl'>Requests</h1>
+        <div className='flex justify-end'>
+            <Link href={'/budget-owner/create-RFQ'}>
+                <button className='btn btn-success b text-slate-50 '>create request</button>
+            </Link>
+        </div>
 
         <div className="overflow-x-auto">
             <table className="table mt-2">
