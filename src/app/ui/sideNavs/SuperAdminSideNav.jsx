@@ -98,16 +98,13 @@ const SuperAdminSideNav = () => {
         </li>
 
         <li>
-            <Link href={'/super-admin/requests'}>
-              <div className='flex place-items-center text-slate-400 py-4 hover:bg-slate-600 hover:text-slate-50'>
+            <div className='flex place-items-center text-slate-400 py-4 hover:bg-slate-600 hover:text-slate-50'>
                 <GiFiles size={24}/>
                 <span>
-                  Requests
+                  <Link href={'/super-admin/requests'}>Requests</Link>
                 </span>
               </div>
-            </Link>
         </li>
-
 
         <li>
             <div className='flex place-items-center text-slate-400 py-4 hover:bg-slate-600 hover:text-slate-50'>
