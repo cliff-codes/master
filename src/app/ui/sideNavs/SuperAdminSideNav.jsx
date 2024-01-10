@@ -8,6 +8,7 @@ import { TbDiscountCheckFilled } from 'react-icons/tb'
 import { FaLuggageCart } from 'react-icons/fa'
 import { FaPeopleCarryBox, FaUsersGear } from 'react-icons/fa6'
 import { IoMdAnalytics } from 'react-icons/io'
+import { GiFiles } from 'react-icons/gi'
 
 const SuperAdminSideNav = () => {
   return (
@@ -97,6 +98,16 @@ const SuperAdminSideNav = () => {
             </ul>
           </details>
         </li>
+
+        <li>
+            <div className='flex place-items-center text-slate-400 py-4 hover:bg-slate-600 hover:text-slate-50'>
+              <GiFiles size={24}/>
+              <span>
+                <Link href={'/super-admin/requests'}>Requests</Link>
+              </span>
+            </div>
+        </li>
+
 
         <li>
             <div className='flex place-items-center text-slate-400 py-4 hover:bg-slate-600 hover:text-slate-50'>
