@@ -1,4 +1,5 @@
 import React from 'react'
+import SaveRequisitionBtn from '../buttons/SaveRequisitionBtn'
 
 const NewRequisitionForm = () => {
   return (
@@ -27,6 +28,9 @@ const NewRequisitionForm = () => {
                         <div className='w-32'>Requisition Type</div>
                         <select className='max-w-sm w-full rounded-md'>
                             <option>Purchase</option>
+                            <option>Contract</option>
+                            <option>Service</option>
+                            <option>Work</option>
                         </select>
                     </div>
 
@@ -48,15 +52,22 @@ const NewRequisitionForm = () => {
                         <div className='w-32'>Priority</div>
                         <select className='max-w-sm w-full rounded-md'>
                             <option>Normal</option>
-                            <option>Urgent</option>
+                            <option>Medium</option>
+                            <option>High</option>
                         </select>
                     </div>
 
                     <div className='w-full flex place-items-center gap-3 mt-1 '>
                         <div className='w-32'>Budget Head</div>
                         <select className='max-w-sm w-full rounded-md' defaultValue={'Select'}>
-                            <option>Normal</option>
-                            <option>Urgent</option>
+                            <option>Computer & Network Resources</option>
+                            <option>Machinery & Equipment Maintenance</option>
+                            <option>Rent & Rates - Office premises</option>
+                            <option>Rent & service change for 3 PTSP existing offices</option>
+                            <option>Service Change - Office premises</option>
+                            <option>Telecommunication & Portal Service</option>
+                            <option>Transportation, Travel</option>
+                            <option>Warehouse for ...........</option>
                         </select>
                     </div>
 
@@ -85,7 +96,7 @@ const NewRequisitionForm = () => {
 
                     <div className='w-full flex place-items-center gap-3 mt-1 '>
                         <div className='w-32'>Available Balance</div>
-                        <input type="text" placeholder="0" className="input input-bordered w-full max-w-sm focus:outline-none focus:border-slate-800"/>
+                        <input type="number" placeholder="0" className="input input-bordered w-full max-w-sm focus:outline-none focus:border-slate-800"/>
                     </div>
 
                     <div className='w-full flex place-items-center gap-3 mt-1 '>
@@ -106,7 +117,7 @@ const NewRequisitionForm = () => {
 
                     <div className='w-full flex place-items-center gap-3 mt-1 '>
                         <h1>Actions: </h1>
-                        <div>
+                        <div className='flex gap-10 ml-6'>
                             <div className='flex place-items-center gap-2'>
                                 <input type='checkbox'/>
                                 <h4>Save Requisition</h4>
@@ -116,6 +127,7 @@ const NewRequisitionForm = () => {
                                 <h4>Send for Approval</h4>
                             </div>
                         </div>
+                        {/* <SaveRequisitionBtn/> */}
                     </div>
                 </section>
             </form>
@@ -133,12 +145,12 @@ const NewRequisitionForm = () => {
                     <div className='flex gap-10'>
                         <div>
                             <h4>Quantity</h4>
-                            <input type="text" placeholder="0" className="input input-bordered w-full max-w-sm focus:outline-none focus:border-slate-800"/>
+                            <input type="number" placeholder="0" className="input input-bordered w-full max-w-sm focus:outline-none focus:border-slate-800"/>
                         </div>
 
                         <div>
                             <h4>Rate*</h4>
-                            <input type="text" placeholder="0" className="input input-bordered w-full max-w-sm focus:outline-none focus:border-slate-800"/>
+                            <input type="number" placeholder="0" className="input input-bordered w-full max-w-sm focus:outline-none focus:border-slate-800"/>
                         </div>
                     </div>
 

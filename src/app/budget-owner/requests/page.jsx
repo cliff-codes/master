@@ -1,14 +1,14 @@
-import Link from 'next/link'
+
 import React from 'react'
+import CreateRequestBtn from '../../ui/buttons/CreateRequestBtn'
+import ViewRequestBtn from '../../ui/buttons/ViewRequestBtn'
 
 const RequetsPage = () => {
   return (
     <div className='px-4 mt-3'>
         <h1 className='font-medium text-lg sm:text-xl'>Requests</h1>
         <div className='flex justify-end'>
-            <Link href={'/budget-owner/create-RFQ'}>
-                <button className='btn btn-success b text-slate-50 '>create request</button>
-            </Link>
+            <CreateRequestBtn route={'/budget-owner/create-RFQ'}/>
         </div>
 
         <div className="overflow-x-auto">
@@ -29,9 +29,7 @@ const RequetsPage = () => {
                     <td>Cy Ganderton</td>
                     <td>Quality Control Specialist</td>
                     <td>
-                       <Link href={'/budget-owner/requests/{1234}'}> 
-                        <button className='btn btn-sm btn-success text-slate-50'>view</button>
-                       </Link>
+                       <ViewRequestBtn route={'/budget-owner/requests/{1234}'}/>
                     </td>
                 </tr>
                 {/* row 2 */}
@@ -40,9 +38,7 @@ const RequetsPage = () => {
                     <td>Hart Hagerty</td>
                     <td>Desktop Support Technician</td>
                     <td>
-                        <Link href={'/budget-owner/requests/{1234}'}> 
-                        <button className='btn btn-sm btn-success text-slate-50'>view</button>
-                       </Link>
+                        <ViewRequestBtn route={'/budget-owner/requests/{1234}'}/>
                     </td>
                 </tr>
                 {/* row 3 */}
@@ -51,9 +47,7 @@ const RequetsPage = () => {
                     <td>Brice Swyre</td>
                     <td>Tax Accountant</td>
                     <td>
-                        <Link href={'/budget-owner/requests/{1234}'}> 
-                        <button className='btn btn-sm btn-success text-slate-50'>view</button>
-                       </Link>
+                        <ViewRequestBtn route={'/budget-owner/requests/{1234}'}/>
                     </td>
                 </tr>
                 </tbody>
