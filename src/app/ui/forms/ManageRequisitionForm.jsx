@@ -30,12 +30,12 @@ const ManageRequisitionForm = () => {
                 <section className='flex flex-1 flex-col gap-4'>
                     <div className='w-full flex place-items-center gap-3 mt-1 '>
                         <div className='w-32'>Req No:</div>
-                        <input type="text" placeholder="12321232" className="input input-bordered w-full max-w-sm" disabled = {true} />
+                        <input type="text" placeholder="12321232" className="input input-bordered w-full max-w-sm" />
                     </div>
 
                     <div className='w-full flex place-items-center gap-3 mt-1 '>
                         <div className='w-32'>Requestor:</div>
-                        <input type="text" placeholder="12321232" className="input input-bordered w-full max-w-sm" disabled = {true} />
+                        <input type="text" placeholder="12321232" className="input input-bordered w-full max-w-sm" />
                     </div>
 
                     <div className='w-full flex place-items-center gap-3 mt-1 '>
@@ -97,12 +97,12 @@ const ManageRequisitionForm = () => {
 
                     <div className='w-full flex place-items-center gap-3 mt-1 '>
                         <div className='w-32'>Budget Total</div>
-                        <input type="text" placeholder="0" disabled = {true} className="input input-bordered w-full max-w-sm focus:outline-none focus:border-slate-800"  />
+                        <input type="text" placeholder="0"  className="input input-bordered w-full max-w-sm focus:outline-none focus:border-slate-800"  />
                     </div>
 
                     <div className='w-full flex place-items-center gap-3 mt-1 '>
                         <div className='w-32'>Expenditure Type</div>
-                        <input type="text" placeholder="0" disabled = {true} className="input input-bordered w-full max-w-sm focus:outline-none focus:border-slate-800"  />
+                        <input type="text" placeholder="0"  className="input input-bordered w-full max-w-sm focus:outline-none focus:border-slate-800"  />
                     </div>
                 </section>
 
@@ -110,28 +110,47 @@ const ManageRequisitionForm = () => {
 
                     <div className='w-full flex place-items-center gap-3 mt-1 '>
                         <div className='w-32'>Total Amount Spent</div>
-                        <input type="text" placeholder="0" disabled = {true} className="input input-bordered w-full max-w-sm focus:outline-none focus:border-slate-800"  />
+                        <input type="text" placeholder="0"  className="input input-bordered w-full max-w-sm focus:outline-none focus:border-slate-800"  />
                     </div>
 
                     <div className='w-full flex place-items-center gap-3 mt-1 '>
                         <div className='w-32'>Available Balance</div>
-                        <input type="number" placeholder="0" disabled = {true} className="input input-bordered w-full max-w-sm focus:outline-none focus:border-slate-800"/>
+                        <input type="number" placeholder="0"  className="input input-bordered w-full max-w-sm focus:outline-none focus:border-slate-800"/>
                     </div>
 
                     <div className='w-full flex place-items-center gap-3 mt-1 '>
                         <div className='w-32'>General Purspose of Requisition</div>
-                        <textarea disabled = {true}  className="textarea textarea-bordered w-full max-w-sm h-32 focus:outline-none focus:border-slate-800" placeholder="Bio"></textarea>
+                        <textarea   className="textarea textarea-bordered w-full max-w-sm h-32 focus:outline-none focus:border-slate-800" placeholder="Bio"></textarea>
                     </div>
 
                     <div className='w-full flex place-items-center gap-3 mt-1 '>
                         <div className='w-32'>Requisition Total</div>
-                        <input type="text" placeholder="0" disabled = {true} className="input input-bordered w-full max-w-sm focus:outline-none focus:border-slate-800"/>
+                        <input type="text" placeholder="0" className="input input-bordered w-full max-w-sm focus:outline-none focus:border-slate-800"/>
                     </div>
 
 
                     <div className='w-full flex place-items-center gap-3 mt-1 '>
                         <div className='w-32'>Extra Budgetary</div>
-                        <input type="text" placeholder="0" disabled = {true} className="input input-bordered w-full max-w-sm focus:outline-none focus:border-slate-800"/>
+                        <input type="text" placeholder="0" className="input input-bordered w-full max-w-sm focus:outline-none focus:border-slate-800"/>
+                    </div>
+                    
+                    <div>
+                        <h1>Supporting Document(s)</h1>
+                        <div className='flex place-items-center justify-center w-full bg-slate-100 h-32'>
+                            <div className='flex flex-col place-items-center cursor-pointer' onClick={handleDivClick}>
+                                {/* hidden file input */}
+                                <input hidden = {true} id='fileInput' type='file' onChange={handleFileChange} key={fileInputKey}/>
+
+                                {/* check from database if there are supporting documents */}
+
+                                {/* if there are no documents return the upload icon else display the documents */}
+                                <MdUpload size={32} /> 
+                                <h1>click to upload</h1>
+
+                                {/* displaying files to be upload */}
+                                {file ? <h1 className='text-blue-600'>{file.name}</h1> : null}
+                            </div> 
+                        </div> 
                     </div>
 
                     <div className='w-full flex place-items-center gap-3 mt-1 '>
