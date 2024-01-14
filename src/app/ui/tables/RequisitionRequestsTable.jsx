@@ -1,5 +1,5 @@
 import React from 'react'
-import ViewRequestBtn from '../buttons/ViewRequestBtn'
+import ManageRequisitionBtn from '../buttons/ManageRequisitionBtn'
 
 const RequisitionRequestsTable = () => {
     //fetch requisition data from database
@@ -36,7 +36,7 @@ const RequisitionRequestsTable = () => {
                 <td>No</td>
                 <td>Open</td>
                 <td>
-                    <ViewRequestBtn route={'/budget-owner/requests/{1234}'}/>
+                    <ManageRequisitionBtn route={'/budget-owner/requests/{1234}'}/>
                 </td>
             </tr>
             
