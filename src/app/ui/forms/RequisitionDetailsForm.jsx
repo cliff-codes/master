@@ -157,7 +157,7 @@ const RequisitionDetailsForm = () => {
         </div>
     </form>
 </div>
-</div>
+    </div>
   )
 }
 
