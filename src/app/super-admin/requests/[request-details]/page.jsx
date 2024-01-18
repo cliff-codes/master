@@ -13,7 +13,7 @@ const RequestDetailsPage = () => {
             <h1 className='font-medium text-xl'>Request Details</h1>
 
             <div className='flex gap-2'>
-              <Link href={'/budget-owner/requests/{reqId}/edit'}>
+              <Link href={'/super-admin/requests/{reqId}/edit'}>
                 <button className='btn btn-sm'>
                   <MdEdit size={24}/>
                 </button>
