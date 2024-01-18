@@ -7,7 +7,7 @@ const RequestsPageForSuperAdmin = () => {
             <h1 className='font-medium text-lg sm:text-xl'>Requests</h1>
 
             <div className='flex justify-end'>
-                <Link href={'/super-admin/requests/create-RFQ'}>
+                <Link href={'/super-admin/requests/create-request'}>
                     <button className='btn btn-success b text-slate-50 '>create request</button>
                 </Link>
             </div>
