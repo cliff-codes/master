@@ -31,7 +31,7 @@ const AdminSideNav = () => {
                             <summary className='w-full'> <span><FaUserGear size={24} className='relative right-3 text-slate-300'/></span> <span className='relative right-3 text-slate-300 font-medium'>User Management</span> </summary>
                             <ul className='w-full'>
                               
-                              <li className='w-full hover:bg-slate-600 rounded-md'><a><SideNavLink icon={<MdMonetizationOn size={24}/>} name={"Set Budget"} route={'/admin/set-budget'} /> </a></li>
+                              <li className='w-full hover:bg-slate-600 rounded-md'><a><SideNavLink icon={<MdMonetizationOn size={24}/>} name={"Set Budget"} route={'/admin/budgets'} /> </a></li>
 
                               <li className='w-full hover:bg-slate-600 rounded-md'><a><SideNavLink icon={<MdPeopleAlt size={24}/>} name={'Users'} route={'/admin/user-management'} /></a></li>
 
