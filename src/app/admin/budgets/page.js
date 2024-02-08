@@ -40,54 +40,84 @@ const page = () => {
 
       {/* fetch budgets from database and display */}
       <section className='mt-4 px-2 rounded-md h-64 pt-3 flex flex-col gap-3'>
-        <div className='w-full flex place-items-center gap-3 hover:bg-slate-200 px-2 py-1'>
-          <div className='w-12 h-12 rounded-full flex justify-center place-items-center bg-green-500'>
+        
+        <div className='w-full flex place-items-center gap-3 hover:bg-slate-200 px-2 py-1 justify-between'>
+         <div className='flex place-items-center gap-2'>
+            {/* card content */}
+            <div className='w-12 h-12 rounded-full flex justify-center place-items-center bg-green-500'>
             <FaFile size={24} className='text-slate-50'/>
-          </div>
-
-          <div>
-            <h1 className='font-medium text-lg'>Annual Budget Spendings</h1>
-            <h1>Internet Subscription</h1>
-            <div className='flex gap-4'>
-              <h1><span className='font-medium '>Budget: </span>5,000,000.00</h1>
-              <h1><span className='font-medium '>Spent: </span>0.00</h1>
-              <h1><span className='font-medium '>Balance: </span>5,000,000.00</h1>
             </div>
+
+            <div>
+              <h1 className='font-medium text-lg'>Annual Budget Spendings</h1>
+              <h1>Internet Subscription</h1>
+              <div className='flex gap-4'>
+                <h1><span className='font-medium '>Budget: </span>5,000,000.00</h1>
+                <h1><span className='font-medium '>Spent: </span>0.00</h1>
+                <h1><span className='font-medium '>Balance: </span>5,000,000.00</h1>
+              </div>
+            </div>
+         </div>
+
+          {/* view and edit button */}
+          <div className='flex gap-1'>
+            <button className='btn  bg-slate-800 text-slate-50 hover:bg-slate-900 '>view</button>
+            <button className='btn'>edit</button>
           </div>
         </div>
 
-        <div className='w-full flex place-items-center gap-3 hover:bg-slate-200 px-2 py-1'>
-          <div className='w-12 h-12 rounded-full flex justify-center place-items-center bg-green-500'>
+        <div className='w-full flex place-items-center gap-3 hover:bg-slate-200 px-2 py-1 justify-between'>
+         <div className='flex place-items-center gap-2'>
+            {/* card content */}
+            <div className='w-12 h-12 rounded-full flex justify-center place-items-center bg-green-500'>
             <FaFile size={24} className='text-slate-50'/>
-          </div>
-
-          <div>
-            <h1 className='font-medium text-lg'>Annual Budget Spendings</h1>
-            <h1>Internet Subscription</h1>
-            <div className='flex gap-4'>
-              <h1><span className='font-medium '>Budget: </span>5,000,000.00</h1>
-              <h1><span className='font-medium '>Spent: </span>0.00</h1>
-              <h1><span className='font-medium '>Balance: </span>5,000,000.00</h1>
             </div>
+
+            <div>
+              <h1 className='font-medium text-lg'>Annual Budget Spendings</h1>
+              <h1>Internet Subscription</h1>
+              <div className='flex gap-4'>
+                <h1><span className='font-medium '>Budget: </span>5,000,000.00</h1>
+                <h1><span className='font-medium '>Spent: </span>0.00</h1>
+                <h1><span className='font-medium '>Balance: </span>5,000,000.00</h1>
+              </div>
+            </div>
+         </div>
+
+          {/* view and edit button */}
+          <div className='flex gap-1'>
+            <button className='btn  bg-slate-800 text-slate-50 hover:bg-slate-900 '>view</button>
+            <button className='btn'>edit</button>
           </div>
         </div>
 
 
-        <div className='w-full flex place-items-center gap-3 hover:bg-slate-200 px-2 py-1'>
-          <div className='w-12 h-12 rounded-full flex justify-center place-items-center bg-green-500'>
+        <div className='w-full flex place-items-center gap-3 hover:bg-slate-200 px-2 py-1 justify-between'>
+         <div className='flex place-items-center gap-2'>
+            {/* card content */}
+            <div className='w-12 h-12 rounded-full flex justify-center place-items-center bg-green-500'>
             <FaFile size={24} className='text-slate-50'/>
-          </div>
-
-          <div>
-            <h1 className='font-medium text-lg'>Annual Budget Spendings</h1>
-            <h1>Internet Subscription</h1>
-            <div className='flex gap-4'>
-              <h1><span className='font-medium '>Budget: </span>5,000,000.00</h1>
-              <h1><span className='font-medium '>Spent: </span>0.00</h1>
-              <h1><span className='font-medium '>Balance: </span>5,000,000.00</h1>
             </div>
+
+            <div>
+              <h1 className='font-medium text-lg'>Annual Budget Spendings</h1>
+              <h1>Internet Subscription</h1>
+              <div className='flex gap-4'>
+                <h1><span className='font-medium '>Budget: </span>5,000,000.00</h1>
+                <h1><span className='font-medium '>Spent: </span>0.00</h1>
+                <h1><span className='font-medium '>Balance: </span>5,000,000.00</h1>
+              </div>
+            </div>
+         </div>
+
+          {/* view and edit button */}
+          <div className='flex gap-1'>
+            <button className='btn  bg-slate-800 text-slate-50 hover:bg-slate-900 '>view</button>
+            <button className='btn'>edit</button>
           </div>
         </div>
+
+        
       </section>
 
     </div>
