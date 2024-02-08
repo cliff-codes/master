@@ -1,6 +1,7 @@
+
 import React from 'react'
 import { FaFile } from 'react-icons/fa'
-
+import Link from 'next/link'
 const page = () => {
   return (
     <div className='px-5'>
@@ -9,7 +10,9 @@ const page = () => {
       <h2 className='mt-2'>Create and manage budgets by department and financial years</h2>
 
       <div className='mt-6'>
-        <button className='btn '>Create New Budget</button>
+        <Link href = {'/admin/budgets/create'} >
+          <button className='btn '>Create New Budget</button>
+        </Link>
       </div>
 
       <div className='mt-6'>
