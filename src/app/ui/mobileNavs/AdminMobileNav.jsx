@@ -4,7 +4,8 @@ import {IoMdNotifications, IoMdAnalytics} from 'react-icons/io'
 import SideNavLink from '../../ui/dashbaord/SideNavLink'
 import {AiFillHome} from 'react-icons/ai'
 import { TbDiscountCheckFilled } from 'react-icons/tb'
-import { FaUsersGear } from 'react-icons/fa6'
+import { FaUserGear, FaUsersGear } from 'react-icons/fa6'
+import { MdMonetizationOn, MdPeopleAlt } from 'react-icons/md'
 
 function closeDrawer(){
     const checkbox = document.getElementById("my-drawer-3")
@@ -53,8 +54,21 @@ const AdminMobileNav = () => {
             <SideNavLink icon={<IoMdAnalytics size={24}/>} name={'Report & Analytics'} route={'/admin/report-analytics'} />
         </li>
 
-        <li onClick={closeDrawer}>
+        {/* <li onClick={closeDrawer}>
             <SideNavLink icon={<FaUsersGear/>} name={"User Management"} route={'/admin/user-management'}/>
+        </li> */}
+
+
+        <li className='relative left-4'>
+          <details close>
+            <summary className='w-full  hover:bg-slate-600 py-4 rounded-md overflow-hidden'> <span><FaUserGear size={24} className='relative right-1 text-slate-400'/></span> <span className='relative right-1 text-slate-400 '>User Management</span> </summary>
+            <ul className='w-full'>
+              
+              <li onClick={closeDrawer} className='w-full '><a><SideNavLink icon={<MdMonetizationOn size={24}/>} name={"Budgets"} route={'/admin/budgets'} /> </a></li>
+
+              <li onClick={closeDrawer} className='w-full '><a><SideNavLink icon={<MdPeopleAlt size={24}/>} name={'Users'} route={'/admin/user-management'} /></a></li>
+            </ul>
+          </details>
         </li>
       </ul>
     </div>

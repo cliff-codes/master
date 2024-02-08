@@ -5,7 +5,7 @@ import { TbDiscountCheckFilled } from "react-icons/tb";
 import { FaUserGear } from "react-icons/fa6";
 import { IoMdAnalytics } from "react-icons/io";
 import SideNavLink from '../dashbaord/SideNavLink'
-import { MdLogout } from 'react-icons/md';
+import { MdLogout, MdMonetizationOn, MdPeopleAlt } from 'react-icons/md';
 
 const AdminSideNav = () => {
   return (
@@ -23,7 +23,25 @@ const AdminSideNav = () => {
                     <SideNavLink icon={<AiFillHome size={24}/>} name={'Home'} route={'/admin'} />
                     <SideNavLink icon={<TbDiscountCheckFilled size={24}/>} name={'Approvals'} route={'/admin/approvals'} />
                     <SideNavLink icon={<IoMdAnalytics size={24}/>} name={'Report & Analytics'} route={'/admin/report-analytics'} />
-                    <SideNavLink icon={<FaUserGear size={24}/>} name={'User Management'} route={'/admin/user-management'} />
+
+                    <ul className="menu bg-slate-800 w-56 rounded-box text-slate-400 w-full ">
+                      
+                        <li>
+                          <details close>
+                            <summary className='w-full'> <span><FaUserGear size={24} className='relative right-3 text-slate-300'/></span> <span className='relative right-3 text-slate-300 font-medium'>User Management</span> </summary>
+                            <ul className='w-full'>
+                              
+                              <li className='w-full hover:bg-slate-600 rounded-md'><a><SideNavLink icon={<MdMonetizationOn size={24}/>} name={"Set Budget"} route={'/admin/set-budget'} /> </a></li>
+
+                              <li className='w-full hover:bg-slate-600 rounded-md'><a><SideNavLink icon={<MdPeopleAlt size={24}/>} name={'Users'} route={'/admin/user-management'} /></a></li>
+
+                            </ul>
+                          </details>
+                        </li>
+                      
+                    </ul>
+
+                    
                 </div>
             </div>
 
